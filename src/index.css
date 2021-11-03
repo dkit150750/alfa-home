@@ -1,0 +1,18 @@
+@import './styles/blocks/banners-section.css';
+@import './styles/blocks/banners-slider.css';
+@import './styles/blocks/product-slider-one.css';
+
+@import './styles/blocks/advantages.css';
+@import './styles/blocks/advantage.css';
+
+@import './styles/blocks/catalogs-slider.css';
+@import './styles/blocks/banner-discount.css';
+@import './styles/blocks/banner-discount-2.css';
+
+@import './styles/blocks/brands-slider.css';
+
+@import './styles/blocks/works-slider.css';
+@import './styles/blocks/about-section.css';
+
+@import './styles/blocks/news-slider.css';
+@import './styles/blocks/promotions.css';

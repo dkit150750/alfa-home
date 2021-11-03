@@ -1,0 +1,35 @@
+{
+	"env": {
+		"browser": true,
+		"es2021": true
+	},
+	"parser": "babel-eslint",
+	"parserOptions": {
+		"ecmaVersion": 12,
+		"sourceType": "module"
+	},
+	"plugins": ["prettier", "unicorn", "import"],
+	"extends": [
+		"eslint:recommended",
+		"airbnb-base",
+		"prettier",
+		"plugin:import/recommended",
+		"plugin:unicorn/recommended",
+		"plugin:prettier/recommended"
+	],
+
+	"rules": {
+		"prettier/prettier": "error",
+		// unicorn
+		"unicorn/no-array-for-each": "off",
+		"unicorn/no-null": "off",
+		"unicorn/prefer-module": "off",
+		"unicorn/prefer-node-protocol": "off",
+		"unicorn/filename-case": "off",
+
+		"no-use-before-define": 0,
+		"no-inner-declarations": 0,
+
+		"no-param-reassign": 0
+	}
+}

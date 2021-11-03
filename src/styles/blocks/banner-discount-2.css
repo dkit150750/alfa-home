@@ -1,0 +1,21 @@
+.banner-discount-2__inner {
+	position: relative;
+
+	min-height: 105px;
+
+	border-radius: 7px;
+
+	overflow: hidden;
+}
+
+.banner-discount-2__image {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+
+	width: 100%;
+	height: 100%;
+
+	object-fit: cover;
+}

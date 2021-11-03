@@ -1,0 +1,28 @@
+.header-top-menu__list {
+	display: flex;
+	gap: 13px;
+
+	margin: 0;
+	padding: 0;
+
+	list-style: none;
+}
+
+.header-top-menu__link {
+	display: grid;
+	grid-auto-flow: column;
+	grid-template-columns: max-content;
+	gap: 5px;
+
+	padding: 3px 10px;
+
+	color: inherit;
+	font-size: 13px;
+	text-decoration: none;
+
+	border-radius: 3px;
+}
+
+.header-top-menu__link--border {
+	box-shadow: 0 0 0 1px var(--color-red-500);
+}

@@ -1,0 +1,21 @@
+@import './styles/fonts.css';
+@import './styles/base.css';
+@import './styles/page.css';
+
+@import './styles/blocks/swiper.css';
+@import './styles/blocks/swiper-navigation.css';
+@import './styles/blocks/swiper-pagination.css';
+
+@import './styles/blocks/underlined-header.css';
+@import './styles/blocks/title-h2.css';
+
+@import './styles/blocks/header.css';
+@import './styles/blocks/header-logo.css';
+@import './styles/blocks/header-top-menu.css';
+@import './styles/blocks/header-search.css';
+@import './styles/blocks/header-tab.css';
+@import './styles/blocks/header-menu.css';
+@import './styles/blocks/submenu.css';
+@import './styles/blocks/sub-submenu.css';
+
+@import './styles/blocks/tabbed.css';

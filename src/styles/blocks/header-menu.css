@@ -1,0 +1,25 @@
+.header-menu {
+}
+
+.header-menu__list {
+	display: flex;
+	gap: 10px;
+	justify-content: space-between;
+
+	margin: 0;
+	padding: 0;
+
+	list-style: none;
+}
+
+.header-menu__link {
+	display: block;
+
+	padding: 28px 0;
+
+	color: inherit;
+	font-size: 13px;
+	line-height: 1;
+	text-transform: uppercase;
+	text-decoration: none;
+}

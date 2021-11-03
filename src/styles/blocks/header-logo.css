@@ -1,0 +1,16 @@
+.header-logo {
+	color: inherit;
+	text-decoration: none;
+}
+
+.header-logo__image {
+	display: block;
+
+	height: auto;
+	max-width: 198px;
+}
+
+.header-logo__description {
+	font-weight: 600;
+	font-size: 10px;
+}

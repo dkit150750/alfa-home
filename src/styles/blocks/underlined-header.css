@@ -1,0 +1,32 @@
+.underlined-header {
+	position: relative;
+
+	display: flex;
+}
+
+.underlined-header--tabbed {
+	margin-bottom: 0;
+}
+
+.underlined-header::before {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	content: '';
+
+	display: block;
+
+	width: 100%;
+	height: 1px;
+
+	background-color: var(--color-gray-200);
+}
+
+.underlined-header__title {
+	position: relative;
+	top: 1px;
+
+	padding-right: 10px;
+
+	background-color: var(--color-white);
+}

@@ -1,0 +1,24 @@
+.header-tab {
+	display: grid;
+	justify-items: center;
+
+	border: 0;
+
+	background-color: transparent;
+}
+
+.header-tab__icon {
+	display: block;
+
+	width: 54px;
+	height: 30px;
+}
+
+.header-tab--description {
+	font-size: 13px;
+}
+
+.header-tab--description--bold {
+	font-weight: 600;
+	font-size: 13px;
+}

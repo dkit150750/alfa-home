@@ -1,0 +1,16 @@
+.banners-section {
+	padding-bottom: 25px;
+
+	background-color: var(--color-gray-100);
+}
+
+.banners-section__container {
+	display: grid;
+	gap: 25px;
+}
+
+.banners-section__sliders {
+	display: grid;
+	grid-template-columns: 1fr 300px;
+	gap: 50px;
+}

@@ -1,0 +1,75 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	-webkit-tap-highlight-color: transparent;
+}
+
+:root {
+	--container-padding-x: 50px;
+	--container-max-width: calc(1500px + var(--container-padding-x) + var(--container-padding-x));
+	--color-white: hsl(0, 0%, 100%);
+	--color-black: hsl(0, 0%, 0%);
+	--color-black-a09: hsla(0, 0%, 0%, 0.09);
+	--color-black-a08: hsla(0, 0%, 0%, 0.08);
+	--color-black-a07: hsla(0, 0%, 0%, 0.07);
+	--color-black-a06: hsla(0, 0%, 0%, 0.06);
+	--color-black-a05: hsla(0, 0%, 0%, 0.05);
+	--color-black-a04: hsla(0, 0%, 0%, 0.04);
+	--color-black-a03: hsla(0, 0%, 0%, 0.03);
+	--color-black-a02: hsla(0, 0%, 0%, 0.02);
+	--color-black-a01: hsla(0, 0%, 0%, 0.01);
+	--box-shadow-color: hsla(235, 75%, 6%, 0.1);
+	--box-shadow: 0 1px 20px 0 var(--box-shadow-color);
+	--color-gray-100: hsl(240, 5%, 96%);
+	--color-gray-120: hsl(240, 0%, 94%);
+	--color-gray-150: hsl(240, 0%, 92%);
+	--color-gray-170: hsl(240, 0%, 89%);
+	--color-gray-200: hsl(255, 6%, 88%);
+	--color-gray-300: hsl(240, 1%, 77%);
+	--color-gray-400: hsl(0, 0%, 58%);
+	--color-gray-500: hsl(0, 0%, 50%);
+	--color-green-500: hsl(174, 100%, 32%);
+	--color-green-500: hsl(150, 100%, 32%);
+	--color-green-600: hsl(150, 100%, 27%);
+	--color-red-500: hsl(0, 82%, 48%);
+	--color-red-500: hsl(0, 85%, 50%);
+	--color-red-600: hsl(350, 85%, 40%);
+	--color-red-600: hsl(0, 85%, 40%);
+	--color-blue-500: hsl(211, 100%, 50%);
+}
+
+.sr-only {
+	position: absolute;
+
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	padding: 0;
+
+	border: 0;
+
+	overflow: hidden;
+
+	clip: rect(0, 0, 0, 0);
+}
+
+a,
+button,
+input {
+	outline: none;
+}
+
+a:focus-visible,
+button:focus-visible,
+textarea:focus-visible,
+select:focus-visible,
+input:focus-visible {
+	box-shadow: 0 0 0 3px var(--color-blue-500);
+}
+
+._container {
+	max-width: var(--container-max-width);
+	margin: 0 auto;
+	padding: 0 var(--container-padding-x);
+}
