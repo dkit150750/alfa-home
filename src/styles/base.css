@@ -73,7 +73,6 @@ textarea,
 input {
 	font-size: inherit;
 	font-family: inherit;
-
 }
 
 a,
@@ -96,5 +95,4 @@ input:focus-visible {
 	max-width: var(--container-max-width);
 	margin: 0 auto;
 	padding: 0 var(--container-padding-x);
-}
 }
