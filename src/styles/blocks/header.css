@@ -4,7 +4,7 @@
 
 .header__top-container {
 	display: grid;
-	grid-template-columns: min-content 1fr 1fr minmax(max-content, 180px);
+	grid-template-columns: 160px 1fr 1fr minmax(max-content, 180px);
 	align-items: center;
 
 	min-height: 40px;
@@ -26,7 +26,6 @@
 .header__phone {
 	justify-self: flex-end;
 
-	color: inherit;
 	font-weight: 700;
 	font-size: 14px;
 	text-decoration: none;
@@ -42,23 +41,6 @@
 	padding: 10px var(--container-padding-x);
 }
 
-.header__catalog-button {
-	padding: 14px 17px;
-
-	color: var(--color-white);
-	font-weight: 700;
-	font-size: 14px;
-	font-family: inherit;
-	text-transform: uppercase;
-
-	border: 0;
-	border-radius: 5px;
-
-	background-color: var(--color-red-500);
-
-	cursor: pointer;
-}
-
 .header__search {
 	flex-grow: 1;
 }
@@ -71,4 +53,9 @@
 
 .header__bottom {
 	background-color: var(--color-gray-100);
+}
+
+.header-tab__description {
+	font-size: 13px;
+	font-weight: 600;
 }

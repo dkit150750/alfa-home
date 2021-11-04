@@ -1,0 +1,25 @@
+.button {
+	display: flex;
+	gap: 0.6em;
+	align-items: center;
+
+	padding: 1em 1.22em;
+
+	color: var(--color-white);
+	font-weight: 600;
+	font-size: 14px;
+	font-family: inherit;
+	text-transform: uppercase;
+
+	border: 0;
+	border-radius: 5px;
+
+	background-color: var(--color-red-500);
+
+	cursor: pointer;
+}
+
+.button__icon {
+	width: 1.2em;
+	height: 1.2em;
+}

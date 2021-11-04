@@ -3,13 +3,18 @@
 @import './styles/page.css';
 
 @import './styles/blocks/swiper.css';
+
 @import './styles/blocks/swiper-navigation.css';
+
 @import './styles/blocks/swiper-pagination.css';
 
 @import './styles/blocks/underlined-header.css';
 @import './styles/blocks/title-h2.css';
 
+@import './styles/blocks/button.css';
+
 @import './styles/blocks/header.css';
+@import './styles/blocks/header-location.css';
 @import './styles/blocks/header-logo.css';
 @import './styles/blocks/header-top-menu.css';
 @import './styles/blocks/header-search.css';

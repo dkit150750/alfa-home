@@ -29,13 +29,12 @@
 	--color-gray-300: hsl(240, 1%, 77%);
 	--color-gray-400: hsl(0, 0%, 58%);
 	--color-gray-500: hsl(0, 0%, 50%);
+	--color-gray-700: hsl(0, 0%, 27%);
 	--color-green-500: hsl(174, 100%, 32%);
 	--color-green-500: hsl(150, 100%, 32%);
 	--color-green-600: hsl(150, 100%, 27%);
 	--color-red-500: hsl(0, 82%, 48%);
-	--color-red-500: hsl(0, 85%, 50%);
 	--color-red-600: hsl(350, 85%, 40%);
-	--color-red-600: hsl(0, 85%, 40%);
 	--color-blue-500: hsl(211, 100%, 50%);
 }
 
@@ -54,9 +53,34 @@
 	clip: rect(0, 0, 0, 0);
 }
 
+a {
+	text-decoration: none;
+}
+
+button {
+	margin: 0;
+	padding: 0;
+
+	border: 0;
+
+	background-color: transparent;
+
+	cursor: pointer;
+}
+
+button,
+textarea,
+input {
+	font-size: inherit;
+	font-family: inherit;
+
+}
+
 a,
 button,
 input {
+	color: inherit;
+
 	outline: none;
 }
 
@@ -72,4 +96,5 @@ input:focus-visible {
 	max-width: var(--container-max-width);
 	margin: 0 auto;
 	padding: 0 var(--container-padding-x);
+}
 }

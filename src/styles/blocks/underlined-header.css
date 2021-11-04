@@ -2,10 +2,8 @@
 	position: relative;
 
 	display: flex;
-}
-
-.underlined-header--tabbed {
-	margin-bottom: 0;
+	justify-content: space-between;
+	align-items: flex-end;
 }
 
 .underlined-header::before {
@@ -27,6 +25,18 @@
 	top: 1px;
 
 	padding-right: 10px;
+
+	background-color: var(--color-white);
+}
+
+.underlined-header__all {
+	position: relative;
+	top: 1px;
+
+	padding-left: 10px;
+
+	color: var(--color-green-500);
+	line-height: 1;
 
 	background-color: var(--color-white);
 }

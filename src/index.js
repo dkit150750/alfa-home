@@ -34,6 +34,7 @@
 {
 	const productSliderOne = new Swiper('.product-slider-one .swiper', {
 		init: false,
+		cssMode: true,
 		loop: true,
 		autoplay: {
 			delay: 5000,

@@ -1,3 +1,7 @@
+.about-section {
+	padding: 15px 0;
+}
+
 .about-section__container {
 	display: flex;
 	gap: 40px;
@@ -35,6 +39,14 @@
 	padding-left: 19px;
 
 	list-style: none;
+}
+
+.about-section__description p {
+	margin: 0;
+}
+
+.about-section__description p + p {
+	margin-top: 1rem;
 }
 
 .about-section__description li {

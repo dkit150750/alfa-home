@@ -9,16 +9,23 @@
 	padding: 17px 22px;
 	padding-right: calc(22px + 55px);
 
-	color: inherit;
 	font-weight: 400;
 	font-size: 13px;
-	font-family: inherit;
 	line-height: 1;
 
 	border: 0;
 	border-radius: 5px;
 
 	box-shadow: 0 0 0 1px var(--color-gray-200);
+
+	appearance: none;
+}
+
+.header-search__input::-webkit-search-decoration,
+.header-search__input::-webkit-search-cancel-button,
+.header-search__input::-webkit-search-results-button,
+.header-search__input::-webkit-search-results-decoration {
+	display: none;
 }
 
 .header-search__input::placeholder {
@@ -30,10 +37,24 @@
 	top: 0;
 	right: 0;
 
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
 	width: 55px;
 	height: 100%;
+	padding: 0;
 
 	border: 0;
 
 	background-color: transparent;
+}
+
+.header-search__button-submit-icon {
+	display: block;
+
+	width: 50%;
+	height: 50%;
+
+	color: var(--color-red-500);
 }

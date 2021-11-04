@@ -1,0 +1,19 @@
+.header-location {
+	display: grid;
+	grid-template-columns: min-content max-content;
+	gap: 5px;
+	align-items: center;
+}
+
+.header-location__icon {
+	display: block;
+
+	width: 20px;
+	height: 20px;
+}
+
+.header-location__sity {
+	font-weight: 500;
+	font-size: 13px;
+	line-height: 1;
+}

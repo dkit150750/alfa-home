@@ -15,7 +15,14 @@
 		<div class="header__top">
 			<div class="header__top-container _container">
 				<div class="header__location">
-
+					<button class="header-location">
+						<svg class="header-location__icon" width="20" height="20" aria-hidden="true">
+							<use xlink:href="./images/sprite.svg#map"></use>
+						</svg>
+						<span class="header-location__sity">
+							Новомосковск
+						</span>
+					</button>
 				</div>
 				<div class="header__top-menu">
 					<nav class="header-top-menu">
@@ -45,7 +52,7 @@
 					г. Москва, пос. Внуковское, д. Ликова, влд. 85, стр. 1
 				</p>
 
-				<a class="header__phone" href="tel:+7 (495) 640-05-45">+7 (495) 640-05-45</a>
+				<a class="header__phone" href="tel:+74956400545">+7 (495) 640-05-45</a>
 			</div>
 		</div>
 
@@ -56,351 +63,59 @@
 					<span class="header-logo__description">климатическое оборудование в Москве</span>
 				</a>
 
-				<button class="header__catalog-button" type="button">
-					Каталог
+				<button class="button header__catalog-button" type="button">
+					<span class="button__text">
+						Каталог
+					</span>
+					<svg class="button__icon" width="16" height="16" aria-hidden="true">
+						<use xlink:href="./images/sprite.svg#burger"></use>
+					</svg>
 				</button>
 
 				<div class="header__search">
-					<form class="header-search" action="">
+					<form class="header-search">
 						<input class="header-search__input" aria-label="поиск" type="search"
 							placeholder="Введите название товара или артикул">
-						<button class="header-search__button-submit" type="submit">?</button>
+						<button class="header-search__button-submit" type="submit" aria-label="найти">
+							<svg class="header-search__button-submit-icon" width="16" height="16" aria-hidden="true">
+								<use xlink:href="./images/sprite.svg#search"></use>
+							</svg>
+						</button>
 					</form>
 				</div>
 
 				<div class="header__tabs">
 					<button class="header-tab" type="button">
-						<span class="header-tab__icon">
-							X
-						</span>
-						<span class="header-tab__description header-tab__description--bold">Войти</span>
-					</button>
-					<button class="header-tab" type="button">
-						<span class="header-tab__icon">
-							X
-						</span>
+						<svg class="header-tab__icon" width="16" height="16" aria-hidden="true">
+							<use xlink:href="./images/sprite.svg#user2"></use>
+						</svg>
 						<span class="header-tab__description">Войти</span>
 					</button>
 					<button class="header-tab" type="button">
-						<span class="header-tab__icon">
-							X
-						</span>
-						<span class="header-tab__description">Войти</span>
+						<svg class="header-tab__icon" width="16" height="16" aria-hidden="true">
+							<use xlink:href="./images/sprite.svg#comparison"></use>
+						</svg>
+						<span class="header-tab__description">Сравнение</span>
 					</button>
 					<button class="header-tab" type="button">
-						<span class="header-tab__icon">
-							X
-						</span>
-						<span class="header-tab__description header-tab__description--bold">Войти</span>
+						<svg class="header-tab__icon" width="16" height="16" aria-hidden="true">
+							<use xlink:href="./images/sprite.svg#love"></use>
+						</svg>
+						<span class="header-tab__description">Избранное</span>
+					</button>
+					<button class="header-tab" type="button">
+						<svg class="header-tab__icon" width="16" height="16" aria-hidden="true">
+							<use xlink:href="./images/sprite.svg#cart"></use>
+						</svg>
+						<span class="header-tab__description">Корзина</span>
 					</button>
 				</div>
 			</div>
 		</div>
-
-		<div class="header__bottom">
-			<div class="header__bottom-container _container">
-				<nav class="header-menu">
-					<ul class="header-menu__list">
-						<li class="header-menu__item">
-							<a class="header-menu__link" href="/">
-								Кондиционеры
-							</a>
-
-							<div class="submenu">
-								<ul class="submenu__list">
-									<li class="submenu__item">
-										<img class="submenu__item-img" src="./images/sub.jpg" alt="">
-										<a class="submenu__link" href="">
-											VRF-системы и промышленный холод
-										</a>
-
-										<div class="sub-submenu">
-											<ul class="sub-submenu__list">
-												<li class="sub-submenu__item">
-													<a class="sub-submenu__link" href="">
-														Напольно-потолочные кондиционеры
-													</a>
-												</li>
-												<li class="sub-submenu__item">
-													<a class="sub-submenu__link" href="">
-														Напольно-потолочные кондиционеры
-													</a>
-												</li>
-												<li class="sub-submenu__item">
-													<a class="sub-submenu__link" href="">
-														Напольно-потолочные кондиционеры
-													</a>
-												</li>
-												<li class="sub-submenu__item">
-													<a class="sub-submenu__link" href="">
-														Напольно-потолочные кондиционеры
-													</a>
-												</li>
-												<li class="sub-submenu__item">
-													<a class="sub-submenu__link" href="">
-														Напольно-потолочные кондиционеры
-													</a>
-												</li>
-											</ul>
-										</div>
-									</li>
-									<li class="submenu__item">
-										<img class="submenu__item-img" src="./images/sub.jpg" alt="">
-										<a class="submenu__link" href="">
-											VRF-системы и промышленный холод
-										</a>
-
-										<div class="sub-submenu">
-											<ul class="sub-submenu__list">
-												<li class="sub-submenu__item">
-													<a class="sub-submenu__link" href="">
-														Напольно-потолочные кондиционеры
-													</a>
-												</li>
-												<li class="sub-submenu__item">
-													<a class="sub-submenu__link" href="">
-														Напольно-потолочные кондиционеры
-													</a>
-												</li>
-												<li class="sub-submenu__item">
-													<a class="sub-submenu__link" href="">
-														Напольно-потолочные кондиционеры
-													</a>
-												</li>
-												<li class="sub-submenu__item">
-													<a class="sub-submenu__link" href="">
-														Напольно-потолочные кондиционеры
-													</a>
-												</li>
-												<li class="sub-submenu__item">
-													<a class="sub-submenu__link" href="">
-														Напольно-потолочные кондиционеры
-													</a>
-												</li>
-											</ul>
-										</div>
-									</li>
-									<li class="submenu__item">
-										<img class="submenu__item-img" src="./images/sub.jpg" alt="">
-										<a class="submenu__link" href="">
-											VRF-системы и промышленный холод
-										</a>
-
-										<div class="sub-submenu">
-											<ul class="sub-submenu__list">
-												<li class="sub-submenu__item">
-													<a class="sub-submenu__link" href="">
-														Напольно-потолочные кондиционеры
-													</a>
-												</li>
-												<li class="sub-submenu__item">
-													<a class="sub-submenu__link" href="">
-														Напольно-потолочные кондиционеры
-													</a>
-												</li>
-												<li class="sub-submenu__item">
-													<a class="sub-submenu__link" href="">
-														Напольно-потолочные кондиционеры
-													</a>
-												</li>
-												<li class="sub-submenu__item">
-													<a class="sub-submenu__link" href="">
-														Напольно-потолочные кондиционеры
-													</a>
-												</li>
-												<li class="sub-submenu__item">
-													<a class="sub-submenu__link" href="">
-														Напольно-потолочные кондиционеры
-													</a>
-												</li>
-											</ul>
-										</div>
-									</li>
-									<li class="submenu__item">
-										<img class="submenu__item-img" src="./images/sub.jpg" alt="">
-										<a class="submenu__link" href="">
-											VRF-системы и промышленный холод
-										</a>
-
-										<div class="sub-submenu">
-											<ul class="sub-submenu__list">
-												<li class="sub-submenu__item">
-													<a class="sub-submenu__link" href="">
-														Напольно-потолочные кондиционеры
-													</a>
-												</li>
-												<li class="sub-submenu__item">
-													<a class="sub-submenu__link" href="">
-														Напольно-потолочные кондиционеры
-													</a>
-												</li>
-												<li class="sub-submenu__item">
-													<a class="sub-submenu__link" href="">
-														Напольно-потолочные кондиционеры
-													</a>
-												</li>
-												<li class="sub-submenu__item">
-													<a class="sub-submenu__link" href="">
-														Напольно-потолочные кондиционеры
-													</a>
-												</li>
-												<li class="sub-submenu__item">
-													<a class="sub-submenu__link" href="">
-														Напольно-потолочные кондиционеры
-													</a>
-												</li>
-											</ul>
-										</div>
-									</li>
-								</ul>
-							</div>
-						</li>
-						<li class="header-menu__item">
-							<a class="header-menu__link" href="/">
-								Кондиционеры
-							</a>
-
-							<div class="submenu">
-								<ul class="submenu__list">
-									<li class="submenu__item">
-										<img class="submenu__item-img" src="./images/sub.jpg" alt="">
-										<a class="submenu__link" href="">
-											VRF-системы и промышленный холод
-										</a>
-
-										<div class="sub-submenu">
-											<ul class="sub-submenu__list">
-												<li class="sub-submenu__item">
-													<a class="sub-submenu__link" href="">
-														Напольно-потолочные кондиционеры
-													</a>
-												</li>
-												<li class="sub-submenu__item">
-													<a class="sub-submenu__link" href="">
-														Напольно-потолочные кондиционеры
-													</a>
-												</li>
-												<li class="sub-submenu__item">
-													<a class="sub-submenu__link" href="">
-														Напольно-потолочные кондиционеры
-													</a>
-												</li>
-												<li class="sub-submenu__item">
-													<a class="sub-submenu__link" href="">
-														Напольно-потолочные кондиционеры
-													</a>
-												</li>
-												<li class="sub-submenu__item">
-													<a class="sub-submenu__link" href="">
-														Напольно-потолочные кондиционеры
-													</a>
-												</li>
-											</ul>
-										</div>
-									</li>
-								</ul>
-							</div>
-						</li>
-						<li class="header-menu__item">
-							<a class="header-menu__link" href="/">
-								Кондиционеры
-							</a>
-
-							<div class="submenu">
-								<ul class="submenu__list">
-									<li class="submenu__item">
-										<img class="submenu__item-img" src="./images/sub.jpg" alt="">
-										<a class="submenu__link" href="">
-											VRF-системы и промышленный холод
-										</a>
-
-										<div class="sub-submenu">
-											<ul class="sub-submenu__list">
-												<li class="sub-submenu__item">
-													<a class="sub-submenu__link" href="">
-														Напольно-потолочные кондиционеры
-													</a>
-												</li>
-												<li class="sub-submenu__item">
-													<a class="sub-submenu__link" href="">
-														Напольно-потолочные кондиционеры
-													</a>
-												</li>
-												<li class="sub-submenu__item">
-													<a class="sub-submenu__link" href="">
-														Напольно-потолочные кондиционеры
-													</a>
-												</li>
-												<li class="sub-submenu__item">
-													<a class="sub-submenu__link" href="">
-														Напольно-потолочные кондиционеры
-													</a>
-												</li>
-												<li class="sub-submenu__item">
-													<a class="sub-submenu__link" href="">
-														Напольно-потолочные кондиционеры
-													</a>
-												</li>
-											</ul>
-										</div>
-									</li>
-								</ul>
-							</div>
-						</li>
-						<li class="header-menu__item">
-							<a class="header-menu__link" href="/">
-								Кондиционеры
-							</a>
-
-							<div class="submenu">
-								<ul class="submenu__list">
-									<li class="submenu__item">
-										<img class="submenu__item-img" src="./images/sub.jpg" alt="">
-										<a class="submenu__link" href="">
-											VRF-системы и промышленный холод
-										</a>
-
-										<div class="sub-submenu">
-											<ul class="sub-submenu__list">
-												<li class="sub-submenu__item">
-													<a class="sub-submenu__link" href="">
-														Напольно-потолочные кондиционеры
-													</a>
-												</li>
-												<li class="sub-submenu__item">
-													<a class="sub-submenu__link" href="">
-														Напольно-потолочные кондиционеры
-													</a>
-												</li>
-												<li class="sub-submenu__item">
-													<a class="sub-submenu__link" href="">
-														Напольно-потолочные кондиционеры
-													</a>
-												</li>
-												<li class="sub-submenu__item">
-													<a class="sub-submenu__link" href="">
-														Напольно-потолочные кондиционеры
-													</a>
-												</li>
-												<li class="sub-submenu__item">
-													<a class="sub-submenu__link" href="">
-														Напольно-потолочные кондиционеры
-													</a>
-												</li>
-											</ul>
-										</div>
-									</li>
-								</ul>
-							</div>
-						</li>
-					</ul>
-				</nav>
-			</div>
-		</div>
-	</header>
+</header>
 
 	<main class="page__main">
-		<div class="banners-section">
+		<div class="banners-section page__banners-section">
 			<div class="banners-section__container _container">
 
 				<div class="banners-section__sliders">
@@ -420,14 +135,14 @@
 
 						<button
 							class="swiper-navigation swiper-navigation--prev banners-slider__navigation banners-slider__navigation--prev">
-							<svg class="swiper-navigation__icon" aria-hidden="true">
+							<svg class="swiper-navigation__icon" width="16" height="16" aria-hidden="true">
 								<use xlink:href="./images/sprite.svg#arrow"></use>
 							</svg>
 						</button>
 
 						<button
 							class="swiper-navigation swiper-navigation--next banners-slider__navigation banners-slider__navigation--next">
-							<svg class="swiper-navigation__icon" aria-hidden="true">
+							<svg class="swiper-navigation__icon" width="16" height="16" aria-hidden="true">
 								<use xlink:href="./images/sprite.svg#arrow"></use>
 							</svg>
 						</button>
@@ -449,14 +164,14 @@
 
 						<button
 							class="swiper-navigation swiper-navigation--prev product-slider-one__navigation product-slider-one__navigation--prev">
-							<svg class="swiper-navigation__icon" aria-hidden="true">
+							<svg class="swiper-navigation__icon" width="16" height="16" aria-hidden="true">
 								<use xlink:href="./images/sprite.svg#arrow"></use>
 							</svg>
 						</button>
 
 						<button
 							class="swiper-navigation swiper-navigation--next product-slider-one__navigation product-slider-one__navigation--next">
-							<svg class="swiper-navigation__icon" aria-hidden="true">
+							<svg class="swiper-navigation__icon" width="16" height="16" aria-hidden="true">
 								<use xlink:href="./images/sprite.svg#arrow"></use>
 							</svg>
 						</button>
@@ -605,14 +320,14 @@
 
 					<button
 						class="swiper-navigation swiper-navigation--prev catalogs-slider__navigation catalogs-slider__navigation--prev">
-						<svg class="swiper-navigation__icon" aria-hidden="true">
+						<svg class="swiper-navigation__icon" width="16" height="16" aria-hidden="true">
 							<use xlink:href="./images/sprite.svg#arrow"></use>
 						</svg>
 					</button>
 
 					<button
 						class="swiper-navigation swiper-navigation--next catalogs-slider__navigation catalogs-slider__navigation--next">
-						<svg class="swiper-navigation__icon" aria-hidden="true">
+						<svg class="swiper-navigation__icon" width="16" height="16" aria-hidden="true">
 							<use xlink:href="./images/sprite.svg#arrow"></use>
 						</svg>
 					</button>
@@ -634,11 +349,11 @@
 			</div>
 		</div>
 
-		<div class="products-tabbed">
+		<div class="products-tabbed page__products-tabbed">
 			<div class="products-tabbed__container _container">
 
 				<div class="tabbed" data-type="tabbed">
-					<div class="underlined-header underlined-header--tabbed">
+					<div class="underlined-header">
 						<div class="tabbed__tablist-wrapper">
 							<ul class="tabbed__tablist" data-type="tablist">
 								<li class="tabbed__tab-parent" data-type="tab-parent">
@@ -684,7 +399,7 @@
 			</div>
 		</div>
 
-		<div class="banner-discount-2">
+		<div class="banner-discount-2 page__banner-discount-2">
 			<div class="banner-discount-2__container _container">
 				<div class="banner-discount-2__inner">
 					<img class="banner-discount-2__image" src="./images/banner-3.png" alt="">
@@ -774,14 +489,14 @@
 
 					<button
 						class="swiper-navigation swiper-navigation--prev brands-slider__navigation brands-slider__navigation--prev">
-						<svg class="swiper-navigation__icon" aria-hidden="true">
+						<svg class="swiper-navigation__icon" width="16" height="16" aria-hidden="true">
 							<use xlink:href="./images/sprite.svg#arrow"></use>
 						</svg>
 					</button>
 
 					<button
 						class="swiper-navigation swiper-navigation--next brands-slider__navigation brands-slider__navigation--next">
-						<svg class="swiper-navigation__icon" aria-hidden="true">
+						<svg class="swiper-navigation__icon" width="16" height="16" aria-hidden="true">
 							<use xlink:href="./images/sprite.svg#arrow"></use>
 						</svg>
 					</button>
@@ -789,7 +504,7 @@
 			</div>
 		</section>
 
-		<div class="about-section">
+		<div class="about-section page__about-section">
 			<div class="about-section__container _container">
 				<img class="about-section__image" src="./images/about.png" alt="">
 				<div class="about-section__description">
@@ -842,6 +557,10 @@
 
 		<section class="promotions-section">
 			<div class="promotions-section__container _container">
+				<div class="underlined-header">
+					<h2 class="title-h2 underlined-header__title">Акции</h2>
+					<a class="underlined-header__all" href="/">Все акции</a>
+				</div>
 				<div class="promotions">
 					<article class="promotions__promotion">
 						<div class="promotions__promotion-image-wrapper">
@@ -862,7 +581,7 @@
 			<div class="news-tabbed__container _container">
 
 				<div class="tabbed" data-type="tabbed">
-					<div class="underlined-header underlined-header--tabbed">
+					<div class="underlined-header">
 						<div class="tabbed__tablist-wrapper">
 							<span class="tabbed__tablist-wrapper-title">
 								<span class="tabbed__tablist-wrapper-title--color">
@@ -872,15 +591,15 @@
 							</span>
 							<ul class="tabbed__tablist" data-type="tablist">
 								<li class="tabbed__tab-parent" data-type="tab-parent">
-									<a class="tabbed__tab" href="#section1" data-type="tab">Новости</a>
+									<a class="tabbed__tab" href="#section-1" data-type="tab">Новости</a>
 								</li>
 								<li class="tabbed__tab-parent" data-type="tab-parent">
-									<a class="tabbed__tab" href="#section2" data-type="tab">Полезная информация</a>
+									<a class="tabbed__tab" href="#section-2" data-type="tab">Полезная информация</a>
 								</li>
 							</ul>
 						</div>
 					</div>
-					<section class="tabbed__tabpanel" id="section1" data-type="tabpanel">
+					<section class="tabbed__tabpanel" id="section-1" data-type="tabpanel">
 						<h2 class="sr-only">Новости</h2>
 						<div class="news-slider">
 							<div class="news-slider__inner">
@@ -1000,20 +719,20 @@
 
 							<button
 								class="swiper-navigation swiper-navigation--prev catalogs-slider__navigation catalogs-slider__navigation--prev">
-								<svg class="swiper-navigation__icon" aria-hidden="true">
+								<svg class="swiper-navigation__icon" width="16" height="16" aria-hidden="true">
 									<use xlink:href="./images/sprite.svg#arrow"></use>
 								</svg>
 							</button>
 
 							<button
 								class="swiper-navigation swiper-navigation--next catalogs-slider__navigation catalogs-slider__navigation--next">
-								<svg class="swiper-navigation__icon" aria-hidden="true">
+								<svg class="swiper-navigation__icon" width="16" height="16" aria-hidden="true">
 									<use xlink:href="./images/sprite.svg#arrow"></use>
 								</svg>
 							</button>
 						</div>
 					</section>
-					<section class="tabbed__tabpanel" id="section2" data-type="tabpanel">
+					<section class="tabbed__tabpanel" id="section-2" data-type="tabpanel">
 						<h2 class="sr-only">Полезная информация</h2>
 
 						<div class="news-slider info-slider">
@@ -1134,14 +853,14 @@
 
 							<button
 								class="swiper-navigation swiper-navigation--prev catalogs-slider__navigation catalogs-slider__navigation--prev">
-								<svg class="swiper-navigation__icon" aria-hidden="true">
+								<svg class="swiper-navigation__icon" width="16" height="16" aria-hidden="true">
 									<use xlink:href="./images/sprite.svg#arrow"></use>
 								</svg>
 							</button>
 
 							<button
 								class="swiper-navigation swiper-navigation--next catalogs-slider__navigation catalogs-slider__navigation--next">
-								<svg class="swiper-navigation__icon" aria-hidden="true">
+								<svg class="swiper-navigation__icon" width="16" height="16" aria-hidden="true">
 									<use xlink:href="./images/sprite.svg#arrow"></use>
 								</svg>
 							</button>
@@ -1207,14 +926,14 @@
 
 					<button
 						class="swiper-navigation swiper-navigation--prev brands-slider__navigation brands-slider__navigation--prev">
-						<svg class="swiper-navigation__icon" aria-hidden="true">
+						<svg class="swiper-navigation__icon" width="16" height="16" aria-hidden="true">
 							<use xlink:href="./images/sprite.svg#arrow"></use>
 						</svg>
 					</button>
 
 					<button
 						class="swiper-navigation swiper-navigation--next brands-slider__navigation brands-slider__navigation--next">
-						<svg class="swiper-navigation__icon" aria-hidden="true">
+						<svg class="swiper-navigation__icon" width="16" height="16" aria-hidden="true">
 							<use xlink:href="./images/sprite.svg#arrow"></use>
 						</svg>
 					</button>
