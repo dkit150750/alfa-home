@@ -19,8 +19,12 @@
 @import './styles/blocks/about-section.css';
 
 @import './styles/blocks/news-slider.css';
+@import './styles/blocks/news-card.css';
+
+@import './styles/blocks/promotions-section.css';
 @import './styles/blocks/promotions-slider.css';
-@import './styles/blocks/promotion.css';
+@import './styles/blocks/promotion-card.css';
+@import './styles/blocks/certificates-slider.css';
 
 .page__banners-section {
 	margin-bottom: 20px;

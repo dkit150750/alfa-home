@@ -1,0 +1,5 @@
+.promotions-section__sliders {
+	display: grid;
+	grid-template-columns: 1fr 330px;
+	gap: 50px;
+}

@@ -45,21 +45,3 @@
 	font-size: 12px;
 	text-align: center;
 }
-
-.catalogs-slider__navigation {
-	position: absolute;
-	top: 50%;
-	z-index: 10;
-}
-
-.catalogs-slider__navigation--prev {
-	left: 0;
-
-	transform: translateY(-50%) translateX(-50%);
-}
-
-.catalogs-slider__navigation--next {
-	right: 0;
-
-	transform: translateY(-50%) translateX(50%);
-}

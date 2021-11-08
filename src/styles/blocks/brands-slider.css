@@ -39,21 +39,3 @@
 	width: auto;
 	max-height: var(--height);
 }
-
-.brands-slider__navigation {
-	position: absolute;
-	top: 50%;
-	z-index: 10;
-}
-
-.brands-slider__navigation--prev {
-	left: 0;
-
-	transform: translateY(-50%) translateX(-50%);
-}
-
-.brands-slider__navigation--next {
-	right: 0;
-
-	transform: translateY(-50%) translateX(50%);
-}

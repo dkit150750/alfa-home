@@ -139,7 +139,8 @@
 	const promotionsSlider = new Swiper('.promotions-slider .swiper', {
 		init: false,
 		slidesPerView: 'auto',
-		spaceBetween: 12,
+		freeMode: true,
+		spaceBetween: 25,
 
 		autoplay: {
 			delay: 5000,
@@ -154,12 +155,35 @@
 			},
 		},
 	});
-
 	promotionsSlider.init();
 }
 
 {
-	new Swiper('.news-slider .swiper', {
+	const certificatesSlider = new Swiper('.certificates-slider .swiper', {
+		init: false,
+		slidesPerView: 2,
+		freeMode: true,
+		spaceBetween: 25,
+
+		autoplay: {
+			delay: 5000,
+		},
+
+		breakpoints: {
+			640: {
+				navigation: {
+					nextEl: '.certificates-slider .swiper-navigation--next',
+					prevEl: '.certificates-slider .swiper-navigation--prev',
+				},
+			},
+		},
+	});
+	certificatesSlider.init();
+}
+
+{
+	const news = new Swiper('.news-slider .swiper', {
+		// init: false,
 		slidesPerView: 'auto',
 		freeMode: true,
 		spaceBetween: 40,
@@ -177,6 +201,7 @@
 			},
 		},
 	});
+	// news.init();
 }
 
 {
