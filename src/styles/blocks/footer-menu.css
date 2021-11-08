@@ -1,0 +1,21 @@
+.footer-menu {
+	/* display: grid; */
+
+	/* gap: 14px; */
+
+	margin: 0;
+	padding: 0;
+
+	columns: 3;
+	column-gap: 80px;
+
+	list-style: none;
+}
+
+.footer-menu__item + .footer-menu__item {
+	margin-top: 14px;
+}
+
+.footer-menu__link {
+	font-size: 12px;
+}

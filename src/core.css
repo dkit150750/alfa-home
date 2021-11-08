@@ -15,14 +15,20 @@
 
 @import './styles/blocks/skew.css';
 
+@import './styles/blocks/secondary-menu.css';
+
 @import './styles/blocks/header.css';
 @import './styles/blocks/header-location.css';
 @import './styles/blocks/header-logo.css';
-@import './styles/blocks/header-top-menu.css';
 @import './styles/blocks/header-search.css';
 @import './styles/blocks/header-tab.css';
 @import './styles/blocks/header-menu.css';
 @import './styles/blocks/submenu.css';
 @import './styles/blocks/sub-submenu.css';
+
+@import './styles/blocks/footer.css';
+@import './styles/blocks/footer-logo.css';
+@import './styles/blocks/social.css';
+@import './styles/blocks/footer-menu.css';
 
 @import './styles/blocks/tabbed.css';

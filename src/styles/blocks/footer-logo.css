@@ -1,0 +1,12 @@
+.footer-logo {
+	width: 215px;
+}
+
+.footer-logo__description {
+	margin: 0;
+	margin-top: 3px;
+	padding-left: 48px;
+
+	font-weight: 300;
+	font-size: 14px;
+}

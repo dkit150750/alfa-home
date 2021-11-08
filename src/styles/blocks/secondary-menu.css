@@ -1,4 +1,8 @@
-.header-top-menu__list {
+.secondary-menu--light {
+	color: var(--color-black);
+}
+
+.secondary-menu__list {
 	display: flex;
 	gap: 13px;
 
@@ -8,7 +12,7 @@
 	list-style: none;
 }
 
-.header-top-menu__link {
+.secondary-menu__link {
 	display: grid;
 	grid-auto-flow: column;
 	grid-template-columns: max-content;
@@ -22,6 +26,6 @@
 	border-radius: 3px;
 }
 
-.header-top-menu__link--border {
+.secondary-menu__link--border {
 	box-shadow: 0 0 0 1px var(--color-red-500);
 }
