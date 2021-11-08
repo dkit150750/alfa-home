@@ -1,0 +1,28 @@
+.skew {
+	position: relative;
+
+	display: inline-block;
+
+	transform: skew(-2deg) rotate(-2deg);
+}
+
+.skew__value {
+	display: inline-block;
+
+	padding: 0.4em 0.6em 0.4em 0.9em;
+
+	color: var(--color-white);
+	font-size: 14px;
+
+	background-color: var(--color-red-500);
+}
+
+.skew__triangle {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	z-index: -3;
+
+	border-top: 1.2em solid var(--color-red-700);
+	border-left: 1em solid transparent;
+}

@@ -1,13 +1,10 @@
-.promotions {
-	display: flex;
-	gap: 36px;
-}
+.promotion {
+	position: relative;
 
-.promotions__promotion {
 	width: 340px;
 }
 
-.promotions__promotion-image-wrapper {
+.promotion__image-wrapper {
 	position: relative;
 
 	padding-bottom: 58.8%;
@@ -17,7 +14,7 @@
 	overflow: hidden;
 }
 
-.promotions__promotion-image {
+.promotion__image {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -30,12 +27,25 @@
 	object-fit: cover;
 }
 
-.promotions__promotion-title {
+.promotion__title {
+	margin: 0;
+	margin-top: 1em;
+
 	font-weight: 600;
 	font-size: 16px;
 }
 
-.promotions__promotion-description {
+.promotion__description {
+	margin: 0;
+	margin-top: 0.5em;
+
 	color: var(--color-gray-500);
 	font-size: 13px;
+}
+
+.promotion__skew {
+	position: absolute;
+	top: 20px;
+	left: -16px;
+	z-index: 1;
 }

@@ -6,12 +6,14 @@
 
 .banners-slider__inner {
 	display: grid;
+
+	border-radius: 20px;
+
+	overflow: hidden;
 }
 
 .banners-slider .swiper {
 	height: 380px;
-
-	border-radius: 20px;
 }
 
 .banners-slider__image {
@@ -23,29 +25,10 @@
 	object-fit: cover;
 }
 
-.banners-slider__navigation {
-	position: absolute;
-	top: 50%;
-	z-index: 10;
-
-	transform: translateY(-50%);
+.banners-slider .swiper-navigation--prev {
+	left: 30px;
 }
 
-.banners-slider__navigation--prev {
-	left: 20px;
-}
-
-.banners-slider__navigation--next {
-	right: 20px;
-}
-
-.banners-slider__pagination {
-	position: absolute;
-	left: 0;
-	bottom: 5px;
-	z-index: 10;
-
-	transform: translate3d(0, 0, 0);
-
-	transition: 0.3s opacity;
+.banners-slider .swiper-navigation--next {
+	right: 30px;
 }

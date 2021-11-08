@@ -112,7 +112,7 @@
 				</div>
 			</div>
 		</div>
-</header>
+	</header>
 
 	<main class="page__main">
 		<div class="banners-section page__banners-section">
@@ -134,30 +134,34 @@
 						</div>
 
 						<button
-							class="swiper-navigation swiper-navigation--prev banners-slider__navigation banners-slider__navigation--prev">
+							class="swiper-navigation swiper-navigation--prev">
 							<svg class="swiper-navigation__icon" width="16" height="16" aria-hidden="true">
 								<use xlink:href="./images/sprite.svg#arrow"></use>
 							</svg>
 						</button>
 
 						<button
-							class="swiper-navigation swiper-navigation--next banners-slider__navigation banners-slider__navigation--next">
+							class="swiper-navigation swiper-navigation--next">
 							<svg class="swiper-navigation__icon" width="16" height="16" aria-hidden="true">
 								<use xlink:href="./images/sprite.svg#arrow"></use>
 							</svg>
 						</button>
 
-						<div class="swiper-pagination banners-slider__pagination"></div>
+						<div class="swiper-pagination"></div>
 					</div>
 
-					<div class="product-slider-one">
-						<div class="product-slider-one__inner">
+					<div class="products-slider-one">
+						<div class="products-slider-one__inner">
 							<div class="swiper">
 								<div class="swiper-wrapper">
-									<div class="swiper-slide product-slider-one__product">
-									</div>
-									<div class="swiper-slide product-slider-one__product">
-									</div>
+									<article class="swiper-slide product-slide-one">
+										<a class="product-slide-one__type" href="/">Товары недели</a>
+										<a class="product-slide-one__image-link" href="/">
+											<img src="./" alt="">
+										</a>
+									</article>
+									<article class="swiper-slide product-slide-one">
+									</article>
 								</div>
 							</div>
 						</div>
@@ -561,18 +565,72 @@
 					<h2 class="title-h2 underlined-header__title">Акции</h2>
 					<a class="underlined-header__all" href="/">Все акции</a>
 				</div>
-				<div class="promotions">
-					<article class="promotions__promotion">
-						<div class="promotions__promotion-image-wrapper">
-							<img class="promotions__promotion-image" src="./images/news.png" alt="">
+
+				<div class="promotions-slider">
+					<div class="promotions-slider__inner">
+						<div class="swiper">
+							<div class="swiper-wrapper">
+								<article class="promotion">
+									<div class="skew promotion__skew">
+										<span class="skew__value">до 12.09.21</span>
+										<div class="skew__triangle"></div>
+									</div>
+									<div class="promotion__image-wrapper">
+										<img class="promotion__image" src="./images/news.png" alt="">
+									</div>
+									<h3 class="promotion__title">Монтаж в подарок!</h3>
+									<p class="promotion__description">
+										При покупке кондиционера - стандартный
+										монтаж в подарок!
+									</p>
+								</article>
+								<article class="promotion">
+									<div class="skew promotion__skew">
+										<span class="skew__value">до 12.09.21</span>
+										<div class="skew__triangle"></div>
+									</div>
+									<div class="promotion__image-wrapper">
+										<img class="promotion__image" src="./images/news.png" alt="">
+									</div>
+									<h3 class="promotion__title">Монтаж в подарок!</h3>
+									<p class="promotion__description">
+										При покупке кондиционера - стандартный
+										монтаж в подарок!
+									</p>
+								</article>
+								<article class="promotion">
+									<div class="skew promotion__skew">
+										<span class="skew__value">до 12.09.21</span>
+										<div class="skew__triangle"></div>
+									</div>
+									<div class="promotion__image-wrapper">
+										<img class="promotion__image" src="./images/news.png" alt="">
+									</div>
+									<h3 class="promotion__title">Монтаж в подарок!</h3>
+									<p class="promotion__description">
+										При покупке кондиционера - стандартный
+										монтаж в подарок!
+									</p>
+								</article>
+							</div>
 						</div>
-						<h3 class="promotions__promotion-title">Монтаж в подарок!</h3>
-						<p class="promotions__promotion-description">
-							При покупке кондиционера - стандартный
-							монтаж в подарок!
-						</p>
-					</article>
+					</div>
+
+					<button
+						class="swiper-navigation swiper-navigation--prev promotions-slider__navigation promotions-slider__navigation--prev">
+						<svg class="swiper-navigation__icon" width="16" height="16" aria-hidden="true">
+							<use xlink:href="./images/sprite.svg#arrow"></use>
+						</svg>
+					</button>
+
+					<button
+						class="swiper-navigation swiper-navigation--next promotions-slider__navigation promotions-slider__navigation--next">
+						<svg class="swiper-navigation__icon" width="16" height="16" aria-hidden="true">
+							<use xlink:href="./images/sprite.svg#arrow"></use>
+						</svg>
+					</button>
 				</div>
+
 			</div>
 		</section>
 

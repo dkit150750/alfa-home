@@ -13,6 +13,7 @@
 
 		pagination: {
 			el: '.banners-slider .swiper-pagination',
+			bulletElement: 'button',
 			clickable: true,
 			bulletClass: 'swiper-pagination__bullet',
 			bulletActiveClass: 'swiper-pagination__bullet--active',
@@ -32,9 +33,7 @@
 }
 
 {
-	const productSliderOne = new Swiper('.product-slider-one .swiper', {
-		init: false,
-		cssMode: true,
+	const productsSliderOne = new Swiper('.products-slider-one .swiper', {
 		loop: true,
 		autoplay: {
 			delay: 5000,
@@ -42,7 +41,8 @@
 		clickable: true,
 
 		pagination: {
-			el: '.product-slider-one .swiper-pagination',
+			el: '.products-slider-one .swiper-pagination',
+			bulletElement: 'button',
 			clickable: true,
 			bulletClass: 'swiper-pagination__bullet',
 			bulletActiveClass: 'swiper-pagination__bullet--active',
@@ -51,14 +51,14 @@
 		breakpoints: {
 			640: {
 				navigation: {
-					nextEl: '.product-slider-one .swiper-navigation--next',
-					prevEl: '.product-slider-one .swiper-navigation--prev',
+					nextEl: '.products-slider-one .swiper-navigation--next',
+					prevEl: '.products-slider-one .swiper-navigation--prev',
 				},
 			},
 		},
 	});
 
-	productSliderOne.init();
+	productsSliderOne.init();
 }
 
 {
@@ -85,7 +85,8 @@
 }
 
 {
-	new Swiper('.brands-slider .swiper', {
+	const brandsSlider = new Swiper('.brands-slider .swiper', {
+		init: false,
 		slidesPerView: 6,
 		grid: {
 			rows: 2,
@@ -105,6 +106,8 @@
 			},
 		},
 	});
+
+	brandsSlider.init();
 }
 
 {
@@ -130,6 +133,29 @@
 	});
 
 	worksSlider.init();
+}
+
+{
+	const promotionsSlider = new Swiper('.promotions-slider .swiper', {
+		init: false,
+		slidesPerView: 'auto',
+		spaceBetween: 12,
+
+		autoplay: {
+			delay: 5000,
+		},
+
+		breakpoints: {
+			640: {
+				navigation: {
+					nextEl: '.promotions-slider .swiper-navigation--next',
+					prevEl: '.promotions-slider .swiper-navigation--prev',
+				},
+			},
+		},
+	});
+
+	promotionsSlider.init();
 }
 
 {

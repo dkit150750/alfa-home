@@ -1,0 +1,31 @@
+.promotions-slider {
+	position: relative;
+
+	display: grid;
+	grid-template-columns: 1fr;
+
+	padding: 40px 0;
+}
+
+.promotions-slider__inner {
+	display: grid;
+	grid-template-columns: 1fr;
+}
+
+.promotions-slider__navigation {
+	position: absolute;
+	top: 50%;
+	z-index: 10;
+}
+
+.promotions-slider__navigation--prev {
+	left: 0;
+
+	transform: translateY(-50%) translateX(-50%);
+}
+
+.promotions-slider__navigation--next {
+	right: 0;
+
+	transform: translateY(-50%) translateX(50%);
+}

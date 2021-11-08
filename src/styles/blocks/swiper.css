@@ -64,3 +64,34 @@
 .swiper-fade .swiper-slide-active .swiper-slide-active {
 	pointer-events: auto;
 }
+
+.swiper-navigation {
+	position: absolute;
+	top: 50%;
+	z-index: 10;
+
+	transform: translateY(-50%);
+}
+
+.swiper-navigation--prev {
+	left: 0;
+
+	transform: translateY(-50%) translateX(-50%);
+}
+
+.swiper-navigation--next {
+	right: 0;
+
+	transform: translateY(-50%) translateX(50%);
+}
+
+.swiper-pagination {
+	position: absolute;
+	left: 0;
+	bottom: 5px;
+	z-index: 10;
+
+	transform: translate3d(0, 0, 0);
+
+	transition: 0.3s opacity;
+}

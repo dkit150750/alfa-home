@@ -1,6 +1,7 @@
 @import './styles/blocks/banners-section.css';
 @import './styles/blocks/banners-slider.css';
-@import './styles/blocks/product-slider-one.css';
+@import './styles/blocks/products-slider-one.css';
+@import './styles/blocks/product-slide-one.css';
 
 @import './styles/blocks/advantages.css';
 @import './styles/blocks/advantage.css';
@@ -18,7 +19,8 @@
 @import './styles/blocks/about-section.css';
 
 @import './styles/blocks/news-slider.css';
-@import './styles/blocks/promotions.css';
+@import './styles/blocks/promotions-slider.css';
+@import './styles/blocks/promotion.css';
 
 .page__banners-section {
 	margin-bottom: 20px;
