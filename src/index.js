@@ -49,10 +49,20 @@ function getCoords(element) {
 
 {
 	const header = document.querySelector('.header');
-	const headerSticky = document.querySelector('.header-sticky');
+	const headerTop = header.querySelector('.header__top');
 	const headerMiddle = header.querySelector('.header__middle');
-	const headerMiddleCoords = getCoords(headerMiddle);
 	const buttonScrollUp = document.querySelector('.page__scroll-up');
+
+	let headerMiddleHeight;
+	let headerTopCoords;
+
+	function getHeaderValues() {
+		headerMiddleHeight = headerMiddle.clientHeight;
+		headerTopCoords = getCoords(headerTop);
+		console.log('get Val');
+		switchHeaderSticky();
+	}
+	getHeaderValues();
 
 	buttonScrollUp.addEventListener('click', () => {
 		window.scrollTo({
@@ -61,28 +71,35 @@ function getCoords(element) {
 		});
 	});
 
-	const switchHeaderSticky = () => {
-		if (window.pageYOffset > headerMiddleCoords.top) {
-			headerSticky.classList.add('header-sticky--show');
+	function switchHeaderSticky() {
+		if (window.pageYOffset > headerTopCoords.bottom) {
+			headerMiddle.classList.add('header__middle--fixed');
+			headerTop.style.marginBottom = `${headerMiddleHeight}px`;
 		} else {
-			headerSticky.classList.remove('header-sticky--show');
+			headerMiddle.classList.remove('header__middle--fixed');
+			headerTop.style.marginBottom = 0;
 		}
-	};
+	}
 
-	const switchButtonScrollUp = () => {
+	function switchButtonScrollUp() {
 		if (window.pageYOffset > document.documentElement.clientHeight) {
 			buttonScrollUp.classList.add('page__scroll-up--show');
 		} else {
 			buttonScrollUp.classList.remove('page__scroll-up--show');
 		}
-	};
+	}
 
 	const windowScrollHandler = throttle(() => {
 		switchHeaderSticky();
 		switchButtonScrollUp();
+	}, 10);
+
+	const windowResizeHandler = throttle(() => {
+		getHeaderValues();
 	}, 100);
 
 	window.addEventListener('scroll', windowScrollHandler, { passive: true });
+	window.addEventListener('resize', windowResizeHandler, { passive: true });
 }
 
 {
@@ -194,11 +211,11 @@ function getCoords(element) {
 {
 	const brandsSlider = new Swiper('.brands-slider .swiper', {
 		init: false,
-		slidesPerView: 6,
+		slidesPerView: 'auto',
 		grid: {
 			rows: 2,
 		},
-		spaceBetween: 25,
+		spaceBetween: 24,
 
 		autoplay: {
 			delay: 5000,

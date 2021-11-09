@@ -6,7 +6,7 @@
 }
 
 :root {
-	--container-padding-x: 50px;
+	--container-padding-x: 16px;
 	--container-max-width: calc(1500px + var(--container-padding-x) + var(--container-padding-x));
 	--color-white: hsl(0, 0%, 100%);
 	--color-black: hsl(0, 0%, 0%);
@@ -41,6 +41,24 @@
 	--color-red-600: hsl(350, 85%, 40%);
 	--color-red-700: hsl(350, 85%, 30%);
 	--color-blue-500: hsl(211, 100%, 50%);
+}
+
+@media (min-width: 980px) {
+	:root {
+		--container-padding-x: 50px;
+	}
+}
+
+@media (min-width: 770px) {
+	:root {
+		--container-padding-x: 30px;
+	}
+}
+
+@media (min-width: 1280px) {
+	:root {
+		--container-padding-x: 50px;
+	}
 }
 
 .sr-only {

@@ -3,6 +3,14 @@
 	grid-template-columns: min-content max-content;
 	gap: 5px;
 	align-items: center;
+
+	width: 130px;
+}
+
+@media (min-width: 1150px) {
+	.header-location {
+		width: 150px;
+	}
 }
 
 .header-location__icon {
@@ -14,6 +22,12 @@
 
 .header-location__sity {
 	font-weight: 500;
-	font-size: 13px;
+	font-size: 10px;
 	line-height: 1;
+}
+
+@media (min-width: 1150px) {
+	.header-location__sity {
+		font-size: 13px;
+	}
 }

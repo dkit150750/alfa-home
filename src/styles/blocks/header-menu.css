@@ -10,12 +10,27 @@
 }
 
 .header-menu__link {
-	display: block;
+	display: flex;
+	align-items: center;
 
-	padding: 28px 0;
+	padding: 28px 0 18px;
 
-	font-size: 13px;
-	line-height: 1;
+	font-weight: 600;
+	font-size: 9px;
+	line-height: 1.1;
+	text-align: center;
 	text-transform: uppercase;
 	text-decoration: none;
+}
+
+@media (min-width: 950px) {
+	.header-menu__link {
+		font-size: 11px;
+	}
+}
+
+@media (min-width: 1160px) {
+	.header-menu__link {
+		font-size: 13px;
+	}
 }

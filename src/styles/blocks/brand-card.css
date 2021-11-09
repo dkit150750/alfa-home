@@ -1,0 +1,25 @@
+.brand-card {
+	--height: 80px;
+	--width: 230px;
+
+	display: grid;
+
+	width: var(--width);
+	height: var(--height);
+	padding: 0 17px;
+
+	border: 1px solid var(--color-gray-150);
+	border-radius: 10px;
+
+	background-color: var(--color-white);
+
+	overflow: hidden;
+}
+
+.brand-card__image {
+	display: block;
+	justify-self: center;
+
+	width: auto;
+	max-height: var(--height);
+}

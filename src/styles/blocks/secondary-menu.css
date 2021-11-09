@@ -14,9 +14,9 @@
 	grid-template-columns: max-content;
 	gap: 5px;
 
-	padding: 3px 10px;
+	padding: 0.23em 0.77em;
 
-	font-size: 13px;
+	font-size: 10px;
 	text-decoration: none;
 
 	border-radius: 3px;
@@ -24,4 +24,10 @@
 
 .secondary-menu__link--border {
 	box-shadow: 0 0 0 1px var(--color-red-500);
+}
+
+@media (min-width: 1150px) {
+	.secondary-menu__link {
+		font-size: 13px;
+	}
 }

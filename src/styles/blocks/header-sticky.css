@@ -24,3 +24,24 @@
 	opacity: 1;
 	transform: translateY(0);
 }
+
+.header-sticky__container {
+	display: flex;
+	gap: 30px;
+	align-items: center;
+
+	min-height: 85px;
+	padding: 10px var(--container-padding-x);
+}
+
+.header-sticky__phone {
+	display: none;
+
+	font-size: 14px;
+}
+
+@media (min-width: 1030px) {
+	.header-sticky__phone {
+		display: block;
+	}
+}

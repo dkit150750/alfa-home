@@ -15,27 +15,3 @@
 .brands-slider .swiper {
 	height: 185px;
 }
-
-.brands-slider__brand {
-	--height: 80px;
-
-	display: grid;
-
-	height: var(--height);
-	padding: 0 17px;
-
-	border: 1px solid var(--color-gray-150);
-	border-radius: 10px;
-
-	background-color: var(--color-white);
-
-	overflow: hidden;
-}
-
-.brands-slider__brand-image {
-	display: block;
-	justify-self: center;
-
-	width: auto;
-	max-height: var(--height);
-}
