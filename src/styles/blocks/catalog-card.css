@@ -1,8 +1,8 @@
 .catalog-card {
 	display: grid;
-	gap: 10px;
 
-	width: 182px;
+	width: 155px;
+	height: 150px;
 	padding: 17px;
 
 	border: 1px solid var(--color-gray-150);
@@ -11,6 +11,15 @@
 	background-color: var(--color-white);
 
 	overflow: hidden;
+}
+
+@media (min-width: 400px) {
+	.catalog-card {
+		gap: 10px;
+
+		width: 182px;
+		height: 175px;
+	}
 }
 
 .catalog-card__image {

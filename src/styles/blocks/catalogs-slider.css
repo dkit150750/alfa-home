@@ -11,7 +11,3 @@
 	display: grid;
 	grid-template-columns: 1fr;
 }
-
-.catalogs-slider .swiper {
-	height: 175px;
-}

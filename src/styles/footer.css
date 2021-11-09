@@ -4,19 +4,6 @@
 	background-color: var(--color-green-700);
 }
 
-.footer__top-container {
-	display: flex;
-	justify-content: center;
-
-	padding: 36px var(--padding-x) 16px;
-}
-
-@media (min-width: 768px) {
-	.footer__top-container {
-		padding: 56px var(--padding-x) 25px;
-	}
-}
-
 .footer__logo {
 	display: block;
 

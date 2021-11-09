@@ -18,6 +18,7 @@
 .header-tab__description {
 	display: none;
 
+	font-weight: 600;
 	font-size: 13px;
 }
 
@@ -25,4 +26,8 @@
 	.header-tab__description {
 		display: block;
 	}
+}
+
+.header-tab--hide-description .header-tab__description {
+	display: none;
 }

@@ -4,6 +4,7 @@
 
 .footer-secondary-menu__list {
 	display: flex;
+	flex-wrap: wrap;
 	gap: 13px;
 
 	margin: 0;

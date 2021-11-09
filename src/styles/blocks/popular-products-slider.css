@@ -1,10 +1,16 @@
 .popular-products-slider {
-	position: relative;
+	display: none;
+}
 
-	display: grid;
-	grid-template-columns: 1fr;
+@media (min-width: 1280px) {
+	.popular-products-slider {
+		position: relative;
 
-	padding-bottom: 30px;
+		display: grid;
+		grid-template-columns: 1fr;
+
+		padding-bottom: 30px;
+	}
 }
 
 .popular-products-slider__inner {

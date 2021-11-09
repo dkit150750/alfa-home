@@ -3,6 +3,7 @@
 	top: 1px;
 
 	display: flex;
+	flex-wrap: wrap;
 	gap: 10px;
 	align-items: center;
 
@@ -17,6 +18,7 @@
 	padding: 0.5rem 0;
 
 	font-weight: 700;
+	white-space: nowrap;
 	text-transform: uppercase;
 }
 
@@ -38,15 +40,21 @@
 .tabbed__tab {
 	display: block;
 
-	padding: 0.5rem 1em;
+	padding: 0.5em 1em;
 
 	font-weight: 700;
-	font-size: 17px;
+	font-size: 14px;
 	text-decoration: none;
 
 	border-radius: 3px;
 
 	background-color: var(--color-gray-100);
+}
+
+@media (min-width: 660px) {
+	.tabbed__tab {
+		font-size: 17px;
+	}
 }
 
 .tabbed__tab[aria-selected] {
@@ -71,7 +79,7 @@
 }
 
 @media (max-width: 550px) {
-	[role='tablist'] li,
+	/* [role='tablist'] li,
 	[role='tablist'] a {
 		position: static;
 
@@ -96,5 +104,5 @@
 
 	[role='tabpanel'] {
 		border-top: 0;
-	}
+	} */
 }

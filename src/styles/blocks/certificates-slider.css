@@ -10,6 +10,8 @@
 
 .certificates-slider__certificate {
 	display: block;
+
+	width: 207px;
 }
 
 .certificates-slider__certificate-inner {

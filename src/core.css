@@ -18,6 +18,10 @@
 @import './styles/blocks/footer-secondary-menu.css';
 
 @import './styles/blocks/header.css';
+@import './styles/blocks/header-desktop.css';
+@import './styles/blocks/header-desktop-top.css';
+@import './styles/blocks/header-desktop-middle.css';
+@import './styles/blocks/header-tabs.css';
 @import './styles/blocks/header-sticky.css';
 
 @import './styles/blocks/header-location.css';

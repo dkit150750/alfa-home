@@ -4,16 +4,33 @@
 	padding-bottom: 30px;
 }
 
+@media (max-width: 1200px) {
+	.banners-slider {
+		margin-right: -16px;
+		margin-left: -16px;
+	}
+}
+
 .banners-slider__inner {
 	display: grid;
-
-	border-radius: 20px;
 
 	overflow: hidden;
 }
 
+@media (min-width: 1200px) {
+	.banners-slider__inner {
+		border-radius: 20px;
+	}
+}
+
 .banners-slider .swiper {
-	height: 380px;
+	height: 160px;
+}
+
+@media (min-width: 1200px) {
+	.banners-slider .swiper {
+		height: 380px;
+	}
 }
 
 .banners-slider__image {

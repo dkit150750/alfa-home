@@ -1,5 +1,14 @@
 .promotions-section__sliders {
-	display: grid;
-	grid-template-columns: 1fr 330px;
-	gap: 50px;
+	display: flex;
+	flex-direction: column;
+
+	/* display: grid; */
+}
+
+@media (min-width: 1350px) {
+	.promotions-section__sliders {
+		display: grid;
+		grid-template-columns: 1fr 440px;
+		gap: 50px;
+	}
 }

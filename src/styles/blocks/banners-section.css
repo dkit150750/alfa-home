@@ -1,16 +1,27 @@
 .banners-section {
-	padding: 0 0 30px;
-
 	background-color: var(--color-gray-100);
+}
+
+@media (min-width: 400px) {
+	.banners-section {
+		padding: 0 0 30px;
+	}
 }
 
 .banners-section__container {
 	display: grid;
-	gap: 25px;
 }
 
-.banners-section__sliders {
-	display: grid;
-	grid-template-columns: 1fr 300px;
-	gap: 50px;
+@media (min-width: 400px) {
+	.banners-section__sliders {
+		gap: 25px;
+	}
+}
+
+@media (min-width: 1280px) {
+	.banners-section__sliders {
+		display: grid;
+		grid-template-columns: 1fr 300px;
+		gap: 50px;
+	}
 }

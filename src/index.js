@@ -49,18 +49,22 @@ function getCoords(element) {
 
 {
 	const header = document.querySelector('.header');
-	const headerTop = header.querySelector('.header__top');
-	const headerMiddle = header.querySelector('.header__middle');
+	const headerDesctopeTop = header.querySelector('.header-desktop-top');
+	const headerDesktopMiddle = header.querySelector('.header-desktop-middle');
+	const headerLogoDesktope = headerDesktopMiddle.querySelector('.header-logo--desktope');
+	const headerSearchDesctope = headerDesktopMiddle.querySelector('.header-search');
+	const headerTabsBox = headerDesktopMiddle.querySelector('.header-tabs');
+	const headerTabDesktopeList = headerTabsBox.querySelectorAll('.header-tab');
 	const buttonScrollUp = document.querySelector('.page__scroll-up');
 
 	let headerMiddleHeight;
 	let headerTopCoords;
 
 	function getHeaderValues() {
-		headerMiddleHeight = headerMiddle.clientHeight;
-		headerTopCoords = getCoords(headerTop);
+		headerMiddleHeight = headerDesktopMiddle.clientHeight;
+		headerTopCoords = getCoords(headerDesctopeTop);
 		console.log('get Val');
-		switchHeaderSticky();
+		switchDesctopHeaderSticky();
 	}
 	getHeaderValues();
 
@@ -71,13 +75,25 @@ function getCoords(element) {
 		});
 	});
 
-	function switchHeaderSticky() {
+	function switchDesctopHeaderSticky() {
 		if (window.pageYOffset > headerTopCoords.bottom) {
-			headerMiddle.classList.add('header__middle--fixed');
-			headerTop.style.marginBottom = `${headerMiddleHeight}px`;
+			headerDesktopMiddle.classList.add('header-desktop-middle--fixed');
+			headerLogoDesktope.classList.add('header-logo--hide-description');
+			headerSearchDesctope.classList.add('header-search--compact');
+			// headerTabsBox.classList.add('header-tabs--compact');
+			headerTabDesktopeList.forEach((tab) => {
+				tab.classList.add('header-tab--hide-description');
+			});
+			headerDesctopeTop.style.marginBottom = `${headerMiddleHeight}px`;
 		} else {
-			headerMiddle.classList.remove('header__middle--fixed');
-			headerTop.style.marginBottom = 0;
+			headerDesktopMiddle.classList.remove('header-desktop-middle--fixed');
+			headerLogoDesktope.classList.remove('header-logo--hide-description');
+			headerSearchDesctope.classList.remove('header-search--compact');
+			// headerTabsBox.classList.remove('header-tabs--compact');
+			headerTabDesktopeList.forEach((tab) => {
+				tab.classList.remove('header-tab--hide-description');
+			});
+			headerDesctopeTop.style.marginBottom = 0;
 		}
 	}
 
@@ -90,7 +106,7 @@ function getCoords(element) {
 	}
 
 	const windowScrollHandler = throttle(() => {
-		switchHeaderSticky();
+		switchDesctopHeaderSticky();
 		switchButtonScrollUp();
 	}, 10);
 
@@ -121,7 +137,7 @@ function getCoords(element) {
 		},
 
 		breakpoints: {
-			640: {
+			770: {
 				navigation: {
 					nextEl: '.banners-slider .swiper-navigation--next',
 					prevEl: '.banners-slider .swiper-navigation--prev',
@@ -150,7 +166,7 @@ function getCoords(element) {
 		},
 
 		breakpoints: {
-			640: {
+			770: {
 				navigation: {
 					nextEl: '.popular-products-slider .swiper-navigation--next',
 					prevEl: '.popular-products-slider .swiper-navigation--prev',
@@ -173,7 +189,10 @@ function getCoords(element) {
 		},
 
 		breakpoints: {
-			640: {
+			400: {
+				spaceBetween: 5,
+			},
+			770: {
 				navigation: {
 					nextEl: '.advantages-slider .swiper-navigation--next',
 					prevEl: '.advantages-slider .swiper-navigation--prev',
@@ -196,7 +215,7 @@ function getCoords(element) {
 		},
 
 		breakpoints: {
-			640: {
+			770: {
 				navigation: {
 					nextEl: '.catalogs-slider .swiper-navigation--next',
 					prevEl: '.catalogs-slider .swiper-navigation--prev',
@@ -222,7 +241,7 @@ function getCoords(element) {
 		},
 
 		breakpoints: {
-			640: {
+			770: {
 				navigation: {
 					nextEl: '.brands-slider .swiper-navigation--next',
 					prevEl: '.brands-slider .swiper-navigation--prev',
@@ -247,7 +266,7 @@ function getCoords(element) {
 		},
 
 		breakpoints: {
-			640: {
+			770: {
 				navigation: {
 					nextEl: '.works-slider .swiper-navigation--next',
 					prevEl: '.works-slider .swiper-navigation--prev',
@@ -271,7 +290,7 @@ function getCoords(element) {
 		},
 
 		breakpoints: {
-			640: {
+			770: {
 				navigation: {
 					nextEl: '.promotions-slider .swiper-navigation--next',
 					prevEl: '.promotions-slider .swiper-navigation--prev',
@@ -285,7 +304,7 @@ function getCoords(element) {
 {
 	const certificatesSlider = new Swiper('.certificates-slider .swiper', {
 		init: false,
-		slidesPerView: 2,
+		slidesPerView: 'auto',
 		freeMode: true,
 		spaceBetween: 25,
 
@@ -294,7 +313,7 @@ function getCoords(element) {
 		},
 
 		breakpoints: {
-			640: {
+			770: {
 				navigation: {
 					nextEl: '.certificates-slider .swiper-navigation--next',
 					prevEl: '.certificates-slider .swiper-navigation--prev',
@@ -318,7 +337,7 @@ function getCoords(element) {
 		},
 
 		breakpoints: {
-			640: {
+			770: {
 				navigation: {
 					nextEl: '.news-slider .swiper-navigation--next',
 					prevEl: '.news-slider .swiper-navigation--prev',
@@ -342,7 +361,7 @@ function getCoords(element) {
 		},
 
 		breakpoints: {
-			640: {
+			770: {
 				navigation: {
 					nextEl: '.info-slider .swiper-navigation--next',
 					prevEl: '.info-slider .swiper-navigation--prev',

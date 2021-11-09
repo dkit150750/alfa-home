@@ -1,24 +1,30 @@
 .swiper-navigation {
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	display: none;
+}
 
-	width: 40px;
-	height: 40px;
-	padding: 0;
+@media (min-width: 770px) {
+	.swiper-navigation {
+		display: flex;
+		justify-content: center;
+		align-items: center;
 
-	color: var(--color-red-500);
+		width: 40px;
+		height: 40px;
+		padding: 0;
 
-	border: 0;
-	border-radius: 50%;
+		color: var(--color-red-500);
 
-	background-color: var(--color-white);
+		border: 0;
+		border-radius: 50%;
 
-	outline: none;
+		background-color: var(--color-white);
 
-	box-shadow: var(--box-shadow);
+		outline: none;
 
-	transition: opacity 0.2s;
+		box-shadow: var(--box-shadow);
+
+		transition: opacity 0.2s;
+	}
 }
 
 .swiper-navigation:focus-visible {

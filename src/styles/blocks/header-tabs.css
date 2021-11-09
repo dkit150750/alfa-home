@@ -1,0 +1,20 @@
+.header-tabs {
+	display: grid;
+	grid-template-columns: repeat(4, max-content);
+	gap: 10px;
+}
+
+@media (min-width: 1280px) {
+	.header-tabs {
+		grid-template-columns: repeat(4, minmax(max-content));
+		gap: 30px;
+	}
+}
+
+/* 
+.header-tabs--compact {
+	/* grid-template-columns: repeat(4, max-content); */
+
+/* gap: 30px; */
+
+/* } */

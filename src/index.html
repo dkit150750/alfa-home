@@ -12,7 +12,7 @@
 
 <body class="page__body">
 	<header class="header">
-		<div class="header-sticky">
+		<!-- <div class="header-sticky">
 			<div class="header-sticky__container _container">
 				<a class="header-logo" href="/">
 					<img class="header-logo__image" src="./images/logo.jpg" width="889" height="153" alt="">
@@ -66,157 +66,168 @@
 					</button>
 				</div>
 			</div>
-		</div>
+		</div> -->
 
-
-		<div class="header__top">
-			<div class="header__top-container _container">
-				<div class="header__location">
-					<button class="header-location">
-						<svg class="header-location__icon" width="20" height="20" aria-hidden="true">
-							<use xlink:href="./images/sprite.svg#map"></use>
-						</svg>
-						<span class="header-location__sity">
-							Новомосковск
-						</span>
-					</button>
+		<div class="header-desktop">
+			<div class="header-desktop-top">
+				<div class="header-desktop-top__container _container">
+					<div class="header-desktop-top__location">
+						<button class="header-location">
+							<svg class="header-location__icon" width="20" height="20" aria-hidden="true">
+								<use xlink:href="./images/sprite.svg#map"></use>
+							</svg>
+							<span class="header-location__sity">
+								Новомосковск
+							</span>
+						</button>
+					</div>
+					<div class="header-desktop-top__secondary-menu">
+						<nav class="secondary-menu">
+							<ul class="secondary-menu__list">
+								<li class="secondary-menu__item">
+									<a class="secondary-menu__link" href="/company/">О компании</a>
+								</li>
+								<li class="secondary-menu__item">
+									<a class="secondary-menu__link" href="/brands/">Бренды</a>
+								</li>
+								<li class="secondary-menu__item">
+									<a class="secondary-menu__link secondary-menu__link--border" href="/stock/">Акции</a>
+								</li>
+								<li class="secondary-menu__item">
+									<a class="secondary-menu__link" href="/montazh-kondicionera/">Монтаж</a>
+								</li>
+								<li class="secondary-menu__item">
+									<a class="secondary-menu__link" href="/service/">Сервис</a>
+								</li>
+								<li class="secondary-menu__item">
+									<a class="secondary-menu__link" href="/repairs/">Ремонт</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+					<div class="header-desktop-top__contacts">
+						<p class="header-desktop-top__address">
+							г. Москва, пос. Внуковское, д. Ликова, влд. 85, стр. 1
+						</p>
+						<a class="header-desktop-top__phone header__phone" href="tel:+74956400545">+7 (495) 640-05-45</a>
+					</div>
 				</div>
-				<div class="header__secondary-menu">
-					<nav class="secondary-menu">
-						<ul class="secondary-menu__list">
-							<li class="secondary-menu__item">
-								<a class="secondary-menu__link" href="/company/">О компании</a>
+			</div>
+
+			<div class="header-desktop-middle">
+				<div class="header-desktop-middle__container _container">
+					<a class="header-desktop-middle__logo header-logo header-logo--desktope" href="/">
+						<img class="header-logo__image" src="./images/logo.jpg" width="889" height="153" alt="">
+						<span class="header-logo__description">климатическое оборудование в Москве</span>
+					</a>
+
+					<button class="header-desktop-middle__catalog-button button button--catalog  button--icon" type="button" aria-label="меню">
+						<svg class="button__icon" width="16" height="16" aria-hidden="true">
+							<use xlink:href="./images/sprite.svg#burger"></use>
+						</svg>
+					</button>
+
+					<div class="header-desktop-middle__search">
+						<form class="header-search">
+							<input class="header-search__input" aria-label="поиск" type="search"
+								placeholder="Введите название товара или артикул">
+							<button class="header-search__button-submit" type="submit" aria-label="найти">
+								<svg class="header-search__button-submit-icon" width="16" height="16" aria-hidden="true">
+									<use xlink:href="./images/sprite.svg#search"></use>
+								</svg>
+							</button>
+						</form>
+					</div>
+
+
+					<a class="header-desktop-middle__phone header__phone" href="tel:+74956400545">+7 (495) 640-05-45</a>
+
+					<div class="header-desktop-middle__tabs">
+						<div class="header-tabs">
+							<button class="header-tab" type="button">
+								<svg class="header-tab__icon" width="16" height="16" aria-hidden="true">
+									<use xlink:href="./images/sprite.svg#user2"></use>
+								</svg>
+								<span class="header-tab__description">Войти</span>
+							</button>
+							<button class="header-tab" type="button">
+								<svg class="header-tab__icon" width="16" height="16" aria-hidden="true">
+									<use xlink:href="./images/sprite.svg#comparison"></use>
+								</svg>
+								<span class="header-tab__description">Сравнение</span>
+							</button>
+							<button class="header-tab" type="button">
+								<svg class="header-tab__icon" width="16" height="16" aria-hidden="true">
+									<use xlink:href="./images/sprite.svg#love"></use>
+								</svg>
+								<span class="header-tab__description">Избранное</span>
+							</button>
+							<button class="header-tab" type="button">
+								<svg class="header-tab__icon" width="16" height="16" aria-hidden="true">
+									<use xlink:href="./images/sprite.svg#cart"></use>
+								</svg>
+								<span class="header-tab__description">Корзина</span>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="header__bottom">
+				<div class="header__bottom-container _container">
+					<nav class="header-menu">
+						<ul class="header-menu__list">
+							<li class="header-menu__item">
+								<a class="header-menu__link" href="">
+									КОНДИЦИОНЕРЫ
+								</a>
 							</li>
-							<li class="secondary-menu__item">
-								<a class="secondary-menu__link" href="/brands/">Бренды</a>
+							<li class="header-menu__item">
+								<a class="header-menu__link" href="">
+									отопление
+								</a>
 							</li>
-							<li class="secondary-menu__item">
-								<a class="secondary-menu__link secondary-menu__link--border" href="/stock/">Акции</a>
+							<li class="header-menu__item">
+								<a class="header-menu__link" href="">
+									ВЕНТИЛЯЦИЯ
+								</a>
 							</li>
-							<li class="secondary-menu__item">
-								<a class="secondary-menu__link" href="/montazh-kondicionera/">Монтаж</a>
+							<li class="header-menu__item">
+								<a class="header-menu__link" href="">
+									ОЧИСТИТЕЛИ ВОЗДУХА
+								</a>
 							</li>
-							<li class="secondary-menu__item">
-								<a class="secondary-menu__link" href="/service/">Сервис</a>
+							<li class="header-menu__item">
+								<a class="header-menu__link" href="">
+									УВЛАЖНИТЕЛИ ВОЗДУХА
+								</a>
 							</li>
-							<li class="secondary-menu__item">
-								<a class="secondary-menu__link" href="/repairs/">Ремонт</a>
+							<li class="header-menu__item">
+								<a class="header-menu__link" href="">
+									ОСУШИТЕЛИ ВОЗДУХА
+								</a>
+							</li>
+							<li class="header-menu__item">
+								<a class="header-menu__link" href="">
+									ВОДОНАГРЕВАТЕЛИ
+								</a>
+							</li>
+							<li class="header-menu__item">
+								<a class="header-menu__link" href="">
+									ДОПОЛНИТЕЛЬНОЕ ОБОРУДОВАНИЕ
+								</a>
 							</li>
 						</ul>
 					</nav>
 				</div>
-				<div class="header__top-contacts">
-					<p class="header__address">
-						г. Москва, пос. Внуковское, д. Ликова, влд. 85, стр. 1
-					</p>
-					<a class="header__phone header__phone--top" href="tel:+74956400545">+7 (495) 640-05-45</a>
-				</div>
 			</div>
 		</div>
 
-		<div class="header__middle">
-			<div class="header__middle-container _container">
-				<a class="header-logo" href="/">
-					<img class="header-logo__image" src="./images/logo.jpg" width="889" height="153" alt="">
-					<span class="header-logo__description">климатическое оборудование в Москве</span>
-				</a>
-
-				<button class="button button--icon header__catalog-button" type="button" aria-label="меню">
-					<svg class="button__icon" width="16" height="16" aria-hidden="true">
-						<use xlink:href="./images/sprite.svg#burger"></use>
-					</svg>
-				</button>
-
-				<div class="header__search">
-					<form class="header-search">
-						<input class="header-search__input" aria-label="поиск" type="search"
-							placeholder="Введите название товара или артикул">
-						<button class="header-search__button-submit" type="submit" aria-label="найти">
-							<svg class="header-search__button-submit-icon" width="16" height="16" aria-hidden="true">
-								<use xlink:href="./images/sprite.svg#search"></use>
-							</svg>
-						</button>
-					</form>
+		<div class="header-mobile">
+			<div class="header-mobile-top">
+				<div class="header-mobile-top__container _container">
+					<div class="header-mobil"></div>
 				</div>
-
-				
-				<a class="header__phone header__phone--middle" href="tel:+74956400545">+7 (495) 640-05-45</a>
-
-				<div class="header__tabs">
-					<button class="header-tab" type="button">
-						<svg class="header-tab__icon" width="16" height="16" aria-hidden="true">
-							<use xlink:href="./images/sprite.svg#user2"></use>
-						</svg>
-						<span class="header-tab__description">Войти</span>
-					</button>
-					<button class="header-tab" type="button">
-						<svg class="header-tab__icon" width="16" height="16" aria-hidden="true">
-							<use xlink:href="./images/sprite.svg#comparison"></use>
-						</svg>
-						<span class="header-tab__description">Сравнение</span>
-					</button>
-					<button class="header-tab" type="button">
-						<svg class="header-tab__icon" width="16" height="16" aria-hidden="true">
-							<use xlink:href="./images/sprite.svg#love"></use>
-						</svg>
-						<span class="header-tab__description">Избранное</span>
-					</button>
-					<button class="header-tab" type="button">
-						<svg class="header-tab__icon" width="16" height="16" aria-hidden="true">
-							<use xlink:href="./images/sprite.svg#cart"></use>
-						</svg>
-						<span class="header-tab__description">Корзина</span>
-					</button>
-				</div>
-			</div>
-		</div>
-
-		<div class="header__bottom">
-			<div class="header__bottom-container _container">
-				<nav class="header-menu">
-					<ul class="header-menu__list">
-						<li class="header-menu__item">
-							<a class="header-menu__link" href="">
-								КОНДИЦИОНЕРЫ
-							</a>
-						</li>
-						<li class="header-menu__item">
-							<a class="header-menu__link" href="">
-								отопление
-							</a>
-						</li>
-						<li class="header-menu__item">
-							<a class="header-menu__link" href="">
-								ВЕНТИЛЯЦИЯ
-							</a>
-						</li>
-						<li class="header-menu__item">
-							<a class="header-menu__link" href="">
-								ОЧИСТИТЕЛИ ВОЗДУХА
-							</a>
-						</li>
-						<li class="header-menu__item">
-							<a class="header-menu__link" href="">
-								УВЛАЖНИТЕЛИ ВОЗДУХА
-							</a>
-						</li>
-						<li class="header-menu__item">
-							<a class="header-menu__link" href="">
-								ОСУШИТЕЛИ ВОЗДУХА
-							</a>
-						</li>
-						<li class="header-menu__item">
-							<a class="header-menu__link" href="">
-								ВОДОНАГРЕВАТЕЛИ
-							</a>
-						</li>
-						<li class="header-menu__item">
-							<a class="header-menu__link" href="">
-								ДОПОЛНИТЕЛЬНОЕ ОБОРУДОВАНИЕ
-							</a>
-						</li>
-					</ul>
-				</nav>
 			</div>
 		</div>
 	</header>
@@ -477,7 +488,7 @@
 		<div class="banner-discount">
 			<div class="banner-discount__container _container">
 				<div class="banner-discount__inner">
-					<img class="banner-discount__image" src="./images/banner-price.png" alt="">
+					<img class="banner-discount__image" src="./images/banner-price-2.png" alt="">
 
 					<p class="banner-discount__description">
 						<strong class="banner-discount__description--strong">Скидка 1000 руб.</strong>
