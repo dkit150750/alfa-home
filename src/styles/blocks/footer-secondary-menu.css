@@ -1,4 +1,8 @@
-.secondary-menu__list {
+.footer-secondary-menu {
+	color: var(--color-black);
+}
+
+.footer-secondary-menu__list {
 	display: flex;
 	gap: 13px;
 
@@ -8,7 +12,7 @@
 	list-style: none;
 }
 
-.secondary-menu__link {
+.footer-secondary-menu__link {
 	display: grid;
 	grid-auto-flow: column;
 	grid-template-columns: max-content;
@@ -22,6 +26,6 @@
 	border-radius: 3px;
 }
 
-.secondary-menu__link--border {
+.footer-secondary-menu__link--border {
 	box-shadow: 0 0 0 1px var(--color-red-500);
 }

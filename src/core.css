@@ -16,8 +16,10 @@
 @import './styles/blocks/skew.css';
 
 @import './styles/blocks/secondary-menu.css';
+@import './styles/blocks/footer-secondary-menu.css';
 
 @import './styles/blocks/header.css';
+@import './styles/blocks/header-sticky.css';
 @import './styles/blocks/header-location.css';
 @import './styles/blocks/header-logo.css';
 @import './styles/blocks/header-search.css';

@@ -12,6 +12,63 @@
 
 <body class="page__body">
 	<header class="header">
+		<div class="header-sticky">
+			<div class="header__middle-container _container">
+				<a class="header-logo" href="/">
+					<img class="header-logo__image" src="./images/logo.jpg" width="889" height="153" alt="">
+					<span class="header-logo__description">климатическое оборудование в Москве</span>
+				</a>
+
+				<button class="button header__catalog-button" type="button" aria-label="меню">
+					<svg class="button__icon" width="16" height="16" aria-hidden="true">
+						<use xlink:href="./images/sprite.svg#burger"></use>
+					</svg>
+				</button>
+
+				<div class="header__search">
+					<form class="header-search">
+						<input class="header-search__input" aria-label="поиск" type="search"
+							placeholder="Введите название товара или артикул">
+						<button class="header-search__button-submit" type="submit" aria-label="найти">
+							<svg class="header-search__button-submit-icon" width="16" height="16" aria-hidden="true">
+								<use xlink:href="./images/sprite.svg#search"></use>
+							</svg>
+						</button>
+					</form>
+				</div>
+
+				<a class="header__phone" href="tel:+74956400545">+7 (495) 640-05-45</a>
+
+				<div class="header__tabs">
+					<button class="header-tab" type="button">
+						<svg class="header-tab__icon" width="16" height="16" aria-hidden="true">
+							<use xlink:href="./images/sprite.svg#user2"></use>
+						</svg>
+						<span class="header-tab__description">Войти</span>
+					</button>
+					<button class="header-tab" type="button">
+						<svg class="header-tab__icon" width="16" height="16" aria-hidden="true">
+							<use xlink:href="./images/sprite.svg#comparison"></use>
+						</svg>
+						<span class="header-tab__description">Сравнение</span>
+					</button>
+					<button class="header-tab" type="button">
+						<svg class="header-tab__icon" width="16" height="16" aria-hidden="true">
+							<use xlink:href="./images/sprite.svg#love"></use>
+						</svg>
+						<span class="header-tab__description">Избранное</span>
+					</button>
+					<button class="header-tab" type="button">
+						<svg class="header-tab__icon" width="16" height="16" aria-hidden="true">
+							<use xlink:href="./images/sprite.svg#cart"></use>
+						</svg>
+						<span class="header-tab__description">Корзина</span>
+					</button>
+				</div>
+			</div>
+		</div>
+
+
 		<div class="header__top">
 			<div class="header__top-container _container">
 				<div class="header__location">
@@ -62,15 +119,6 @@
 					<img class="header-logo__image" src="./images/logo.jpg" width="889" height="153" alt="">
 					<span class="header-logo__description">климатическое оборудование в Москве</span>
 				</a>
-
-				<button class="button header__catalog-button" type="button">
-					<span class="button__text">
-						Каталог
-					</span>
-					<svg class="button__icon" width="16" height="16" aria-hidden="true">
-						<use xlink:href="./images/sprite.svg#burger"></use>
-					</svg>
-				</button>
 
 				<div class="header__search">
 					<form class="header-search">
@@ -197,17 +245,30 @@
 						<div class="swiper-pagination"></div>
 					</div>
 
-					<div class="products-slider-one">
-						<div class="products-slider-one__inner">
+					<div class="popular-products-slider">
+						<h2 class="sr-only">Популярные товары</h2>
+						<div class="popular-products-slider__inner">
 							<div class="swiper">
 								<div class="swiper-wrapper">
-									<article class="swiper-slide product-slide-one">
-										<a class="product-slide-one__type" href="/">Товары недели</a>
-										<a class="product-slide-one__image-link" href="/">
-											<img src="./" alt="">
-										</a>
-									</article>
-									<article class="swiper-slide product-slide-one">
+									<article class="swiper-slide popular-product-card">
+										<a class="popular-product-card__type" href="/">Товары недели</a>
+										<div class="popular-product-card__image-wrapper">
+											<a class="popular-product-card__image-link" href="/">
+												<img class="popular-product-card__image" src="./images/product.jpg" alt="">
+											</a>
+										</div>
+										<h3 class="popular-product-card__title">
+											<a class="popular-product-card__title-link" href="/">
+												Кассетный кондиционер
+												Mitsubishi Heavy FDTC2G / SRC2
+												avy FDTC2G / SR
+											</a>
+										</h3>
+										<div class="popuplar-product-card__price-wrapper">
+											<span class="popuplar-product-card__old-price">167 876</span>
+											<span class="popuplar-product-card__discount">-15%</span>
+											<span class="popuplar-product-card__price">167 876 руб.</span>
+										</div>
 									</article>
 								</div>
 							</div>
@@ -231,43 +292,73 @@
 					</div>
 				</div>
 				<h2 class="sr-only">Наши преимущества</h2>
-				<ul class="advantages">
-					<li class="advantage">
-						<img class="advantage__icon" src="./images/advantage.png" width="58" height="43" alt="">
-						<p class="advantage__description">
-							«Климат под ключ»:
-							подбор, монтаж, ремонт
-						</p>
-					</li>
-					<li class="advantage">
-						<img class="advantage__icon" src="./images/advantage.png" width="58" height="43" alt="">
-						<p class="advantage__description">
-							«Климат под ключ»:
-							подбор, монтаж, ремонт
-						</p>
-					</li>
-					<li class="advantage">
-						<img class="advantage__icon" src="./images/advantage.png" width="58" height="43" alt="">
-						<p class="advantage__description">
-							«Климат под ключ»:
-							подбор, монтаж, ремонт
-						</p>
-					</li>
-					<li class="advantage">
-						<img class="advantage__icon" src="./images/advantage.png" width="58" height="43" alt="">
-						<p class="advantage__description">
-							«Климат под ключ»:
-							подбор, монтаж, ремонт
-						</p>
-					</li>
-					<li class="advantage">
-						<img class="advantage__icon" src="./images/advantage.png" width="58" height="43" alt="">
-						<p class="advantage__description">
-							«Климат под ключ»:
-							подбор, монтаж, ремонт
-						</p>
-					</li>
-				</ul>
+
+				<div class="advantages-slider">
+					<div class="advantages-slider__inner">
+						<div class="swiper">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide advantage-card">
+									<div class="advantage-card__inner">
+										<img class="advantage-card__icon" src="./images/advantage.png" width="58" height="43" alt="">
+										<p class="advantage-card__description">
+											«Климат под ключ»:
+											подбор, монтаж, ремонт
+										</p>
+									</div>
+								</div>
+								<div class="swiper-slide advantage-card">
+									<div class="advantage-card__inner">
+										<img class="advantage-card__icon" src="./images/advantage.png" width="58" height="43" alt="">
+										<p class="advantage-card__description">
+											«Климат под ключ»:
+											подбор, монтаж, ремонт
+										</p>
+									</div>
+								</div>
+								<div class="swiper-slide advantage-card">
+									<div class="advantage-card__inner">
+										<img class="advantage-card__icon" src="./images/advantage.png" width="58" height="43" alt="">
+										<p class="advantage-card__description">
+											«Климат под ключ»:
+											подбор, монтаж, ремонт
+										</p>
+									</div>
+								</div>
+								<div class="swiper-slide advantage-card">
+									<div class="advantage-card__inner">
+										<img class="advantage-card__icon" src="./images/advantage.png" width="58" height="43" alt="">
+										<p class="advantage-card__description">
+											«Климат под ключ»:
+											подбор, монтаж, ремонт
+										</p>
+									</div>
+								</div>
+								<div class="swiper-slide advantage-card">
+									<div class="advantage-card__inner">
+										<img class="advantage-card__icon" src="./images/advantage.png" width="58" height="43" alt="">
+										<p class="advantage-card__description">
+											«Климат под ключ»:
+											подбор, монтаж, ремонт
+										</p>
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+
+					<button class="swiper-navigation swiper-navigation--prev">
+						<svg class="swiper-navigation__icon" width="16" height="16" aria-hidden="true">
+							<use xlink:href="./images/sprite.svg#arrow"></use>
+						</svg>
+					</button>
+
+					<button class="swiper-navigation swiper-navigation--next">
+						<svg class="swiper-navigation__icon" width="16" height="16" aria-hidden="true">
+							<use xlink:href="./images/sprite.svg#arrow"></use>
+						</svg>
+					</button>
+				</div>
 			</div>
 		</div>
 
@@ -277,90 +368,79 @@
 					<div class="catalogs-slider__inner">
 						<div class="swiper">
 							<div class="swiper-wrapper">
-								<div class="swiper-slide catalogs-slider__catalog">
-									<img class="catalogs-slider__catalog-image" src="./images/calatol.jpg" width="180" height="135"
-										alt="">
-									<p class="catalogs-slider__catalog-decription">
+								<div class="swiper-slide catalog-card">
+									<img class="catalog-card__image" src="./images/calatol.jpg" width="180" height="135" alt="">
+									<p class="catalog-card__decription">
 										Бытовые
 										кондиционеры
 									</p>
 								</div>
-								<div class="swiper-slide catalogs-slider__catalog">
-									<img class="catalogs-slider__catalog-image" src="./images/calatol.jpg" width="180" height="135"
-										alt="">
-									<p class="catalogs-slider__catalog-decription">
+								<div class="swiper-slide catalog-card">
+									<img class="catalog-card__image" src="./images/calatol.jpg" width="180" height="135" alt="">
+									<p class="catalog-card__decription">
 										Бытовые
 										кондиционеры
 									</p>
 								</div>
-								<div class="swiper-slide catalogs-slider__catalog">
-									<img class="catalogs-slider__catalog-image" src="./images/calatol.jpg" width="180" height="135"
-										alt="">
-									<p class="catalogs-slider__catalog-decription">
+								<div class="swiper-slide catalog-card">
+									<img class="catalog-card__image" src="./images/calatol.jpg" width="180" height="135" alt="">
+									<p class="catalog-card__decription">
 										Бытовые
 										кондиционеры
 									</p>
 								</div>
-								<div class="swiper-slide catalogs-slider__catalog">
-									<img class="catalogs-slider__catalog-image" src="./images/calatol.jpg" width="180" height="135"
-										alt="">
-									<p class="catalogs-slider__catalog-decription">
+								<div class="swiper-slide catalog-card">
+									<img class="catalog-card__image" src="./images/calatol.jpg" width="180" height="135" alt="">
+									<p class="catalog-card__decription">
 										Бытовые
 										кондиционеры
 									</p>
 								</div>
-								<div class="swiper-slide catalogs-slider__catalog">
-									<img class="catalogs-slider__catalog-image" src="./images/calatol.jpg" width="180" height="135"
-										alt="">
-									<p class="catalogs-slider__catalog-decription">
+								<div class="swiper-slide catalog-card">
+									<img class="catalog-card__image" src="./images/calatol.jpg" width="180" height="135" alt="">
+									<p class="catalog-card__decription">
 										Бытовые
 										кондиционеры
 									</p>
 								</div>
-								<div class="swiper-slide catalogs-slider__catalog">
-									<img class="catalogs-slider__catalog-image" src="./images/calatol.jpg" width="180" height="135"
-										alt="">
-									<p class="catalogs-slider__catalog-decription">
+								<div class="swiper-slide catalog-card">
+									<img class="catalog-card__image" src="./images/calatol.jpg" width="180" height="135" alt="">
+									<p class="catalog-card__decription">
 										Бытовые
 										кондиционеры
 									</p>
 								</div>
-								<div class="swiper-slide catalogs-slider__catalog">
-									<img class="catalogs-slider__catalog-image" src="./images/calatol.jpg" width="180" height="135"
-										alt="">
-									<p class="catalogs-slider__catalog-decription">
+								<div class="swiper-slide catalog-card">
+									<img class="catalog-card__image" src="./images/calatol.jpg" width="180" height="135" alt="">
+									<p class="catalog-card__decription">
 										Бытовые
 										кондиционеры
 									</p>
 								</div>
-								<div class="swiper-slide catalogs-slider__catalog">
-									<img class="catalogs-slider__catalog-image" src="./images/calatol.jpg" width="180" height="135"
-										alt="">
-									<p class="catalogs-slider__catalog-decription">
+								<div class="swiper-slide catalog-card">
+									<img class="catalog-card__image" src="./images/calatol.jpg" width="180" height="135" alt="">
+									<p class="catalog-card__decription">
 										Бытовые
 										кондиционеры
 									</p>
 								</div>
-								<div class="swiper-slide catalogs-slider__catalog">
-									<img class="catalogs-slider__catalog-image" src="./images/calatol.jpg" width="180" height="135"
-										alt="">
-									<p class="catalogs-slider__catalog-decription">
+								<div class="swiper-slide catalog-card">
+									<img class="catalog-card__image" src="./images/calatol.jpg" width="180" height="135" alt="">
+									<p class="catalog-card__decription">
 										Бытовые
 										кондиционеры
 									</p>
 								</div>
-								<div class="swiper-slide catalogs-slider__catalog">
-									<img class="catalogs-slider__catalog-image" src="./images/calatol.jpg" width="180" height="135"
-										alt="">
-									<p class="catalogs-slider__catalog-decription">
+								<div class="swiper-slide catalog-card">
+									<img class="catalog-card__image" src="./images/calatol.jpg" width="180" height="135" alt="">
+									<p class="catalog-card__decription">
 										Бытовые
 										кондиционеры
 									</p>
 								</div>
-								<div class="swiper-slide catalogs-slider__catalog">
-									<img class="catalogs-slider__catalog-image" src="./images/calatol.jpg" width="180" height="135"
-										alt="">
-									<p class="catalogs-slider__catalog-decription">
+								<div class="swiper-slide catalog-card">
+									<img class="catalog-card__image" src="./images/calatol.jpg" width="180" height="135" alt="">
+									<p class="catalog-card__decription">
 										Бытовые
 										кондиционеры
 									</p>
@@ -1273,43 +1353,43 @@
 		<div class="footer__middle">
 			<div class="footer__middle-container _container">
 				<div class="footer__bottom-menu">
-					<div class="secondary-menu secondary-menu--light">
-						<ul class="secondary-menu__list">
-							<li class="secondary-menu__item">
-								<a class="secondary-menu__link" href="/company/">О компании</a>
+					<div class="footer-secondary-menu">
+						<ul class="footer-secondary-menu__list">
+							<li class="footer-secondary-menu__item">
+								<a class="footer-secondary-menu__link" href="/company/">О компании</a>
 							</li>
-							<li class="secondary-menu__item">
-								<a class="secondary-menu__link" href="/brands/">Бренды</a>
+							<li class="footer-secondary-menu__item">
+								<a class="footer-secondary-menu__link" href="/brands/">Бренды</a>
 							</li>
-							<li class="secondary-menu__item">
-								<a class="secondary-menu__link secondary-menu__link--border" href="/stock/">Акции</a>
+							<li class="footer-secondary-menu__item">
+								<a class="footer-secondary-menu__link footer-secondary-menu__link--border" href="/stock/">Акции</a>
 							</li>
-							<li class="secondary-menu__item">
-								<a class="secondary-menu__link" href="/montazh-kondicionera/">Новости</a>
+							<li class="footer-secondary-menu__item">
+								<a class="footer-secondary-menu__link" href="/montazh-kondicionera/">Новости</a>
 							</li>
-							<li class="secondary-menu__item">
-								<a class="secondary-menu__link" href="/montazh-kondicionera/">Монтаж</a>
+							<li class="footer-secondary-menu__item">
+								<a class="footer-secondary-menu__link" href="/montazh-kondicionera/">Монтаж</a>
 							</li>
-							<li class="secondary-menu__item">
-								<a class="secondary-menu__link" href="/service/">Доставка</a>
+							<li class="footer-secondary-menu__item">
+								<a class="footer-secondary-menu__link" href="/service/">Доставка</a>
 							</li>
-							<li class="secondary-menu__item">
-								<a class="secondary-menu__link" href="/service/">Сервис</a>
+							<li class="footer-secondary-menu__item">
+								<a class="footer-secondary-menu__link" href="/service/">Сервис</a>
 							</li>
-							<li class="secondary-menu__item">
-								<a class="secondary-menu__link" href="/repairs/">Ремонт</a>
+							<li class="footer-secondary-menu__item">
+								<a class="footer-secondary-menu__link" href="/repairs/">Ремонт</a>
 							</li>
-							<li class="secondary-menu__item">
-								<a class="secondary-menu__link" href="/repairs/">Оплата</a>
+							<li class="footer-secondary-menu__item">
+								<a class="footer-secondary-menu__link" href="/repairs/">Оплата</a>
 							</li>
-							<li class="secondary-menu__item">
-								<a class="secondary-menu__link" href="/repairs/">Гарантия</a>
+							<li class="footer-secondary-menu__item">
+								<a class="footer-secondary-menu__link" href="/repairs/">Гарантия</a>
 							</li>
-							<li class="secondary-menu__item">
-								<a class="secondary-menu__link" href="/repairs/">Статьи</a>
+							<li class="footer-secondary-menu__item">
+								<a class="footer-secondary-menu__link" href="/repairs/">Статьи</a>
 							</li>
-							<li class="secondary-menu__item">
-								<a class="secondary-menu__link" href="/repairs/">Контакты</a>
+							<li class="footer-secondary-menu__item">
+								<a class="footer-secondary-menu__link" href="/repairs/">Контакты</a>
 							</li>
 						</ul>
 					</div>
@@ -1324,6 +1404,12 @@
 			</div>
 		</div>
 	</footer>
+
+	<button class="page__scroll-up">
+		<svg class="page__scroll-up-icon" width="16" height="16" aria-hidden="true">
+			<use xlink:href="./images/sprite.svg#arrow"></use>
+		</svg>
+	</button>
 
 	<script src="./libs/swiper/swiper.js"></script>
 	<script src="./index.js"></script>

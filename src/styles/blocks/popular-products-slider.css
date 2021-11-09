@@ -1,4 +1,4 @@
-.products-slider-one {
+.popular-products-slider {
 	position: relative;
 
 	display: grid;
@@ -7,7 +7,7 @@
 	padding-bottom: 30px;
 }
 
-.products-slider-one__inner {
+.popular-products-slider__inner {
 	display: grid;
 	grid-template-columns: 1fr;
 
@@ -16,19 +16,19 @@
 	box-shadow: var(--box-shadow);
 }
 
-.products-slider-one .swiper {
+.popular-products-slider .swiper {
 	height: 380px;
 
 	border-radius: 20px;
 }
 
-.products-slider-one__navigation {
+.popular-products-slider__navigation {
 	position: absolute;
 	top: 50%;
 	z-index: 10;
 }
 
-.products-slider-one__pagination {
+.popular-products-slider__pagination {
 	position: absolute;
 	left: 0;
 	bottom: 5px;

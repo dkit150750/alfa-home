@@ -1,12 +1,13 @@
 @import './styles/blocks/banners-section.css';
 @import './styles/blocks/banners-slider.css';
-@import './styles/blocks/products-slider-one.css';
-@import './styles/blocks/product-slide-one.css';
+@import './styles/blocks/popular-products-slider.css';
+@import './styles/blocks/popular-product-card.css';
 
-@import './styles/blocks/advantages.css';
-@import './styles/blocks/advantage.css';
+@import './styles/blocks/advantages-slider.css';
+@import './styles/blocks/advantage-card.css';
 
 @import './styles/blocks/catalogs-slider.css';
+@import './styles/blocks/catalog-card.css';
 @import './styles/blocks/banner-discount.css';
 @import './styles/blocks/banner-discount-2.css';
 

@@ -10,6 +10,15 @@
 	--container-max-width: calc(1500px + var(--container-padding-x) + var(--container-padding-x));
 	--color-white: hsl(0, 0%, 100%);
 	--color-black: hsl(0, 0%, 0%);
+	--color-black-a09: hsla(0, 0%, 0%, 0.09);
+	--color-black-a08: hsla(0, 0%, 0%, 0.08);
+	--color-black-a07: hsla(0, 0%, 0%, 0.07);
+	--color-black-a06: hsla(0, 0%, 0%, 0.06);
+	--color-black-a05: hsla(0, 0%, 0%, 0.05);
+	--color-black-a04: hsla(0, 0%, 0%, 0.04);
+	--color-black-a03: hsla(0, 0%, 0%, 0.03);
+	--color-black-a02: hsla(0, 0%, 0%, 0.02);
+	--color-black-a01: hsla(0, 0%, 0%, 0.01);
 	--box-shadow-color: hsla(235, 75%, 6%, 0.1);
 	--box-shadow: 0 1px 20px 0 var(--box-shadow-color);
 	--color-gray-100: hsl(240, 5%, 96%);

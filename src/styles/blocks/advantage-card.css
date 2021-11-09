@@ -1,4 +1,13 @@
-.advantage {
+.advantage-card {
+	--padding-x: 10px;
+	--padding-y: 20px;
+
+	width: calc(280px + var(--padding-x) + var(--padding-x));
+	height: calc(75px + var(--padding-y) + var(--padding));
+	padding: var(--padding-y) var(--padding-x);
+}
+
+.advantage-card__inner {
 	display: flex;
 	gap: 10px;
 	align-items: center;
@@ -12,11 +21,11 @@
 	box-shadow: 0 6px 10px var(--color-black-a07), 0 1px 18px var(--color-black-a06), 0 3px 5px var(--color-black-a01);
 }
 
-.advantage__icon {
+.advantage-card__icon {
 	display: block;
 }
 
-.advantage__description {
+.advantage-card__description {
 	margin: 0;
 
 	font-size: 13px;

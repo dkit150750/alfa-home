@@ -1,6 +1,90 @@
 /* eslint-disable no-new */
 /* eslint-disable no-lone-blocks */
 /* eslint-disable no-undef */
+
+// eslint-disable-next-line no-unused-vars
+function throttle(function_, ms) {
+	let isThrottled = false;
+	let savedArguments;
+	let savedThis;
+
+	function wrapper(...argumentsList) {
+		if (isThrottled) {
+			// eslint-disable-next-line prefer-rest-params
+			savedArguments = argumentsList;
+			// eslint-disable-next-line unicorn/no-this-assignment
+			savedThis = this;
+			return;
+		}
+
+		// eslint-disable-next-line prefer-rest-params
+		Reflect.apply(function_, this, argumentsList);
+
+		isThrottled = true;
+
+		// eslint-disable-next-line func-names
+		setTimeout(function () {
+			isThrottled = false;
+			if (savedArguments) {
+				wrapper.apply(savedThis, savedArguments);
+				savedArguments = null;
+				savedThis = null;
+			}
+		}, ms);
+	}
+
+	return wrapper;
+}
+
+function getCoords(element) {
+	const box = element.getBoundingClientRect();
+
+	return {
+		top: Math.round(box.top + window.pageYOffset),
+		right: Math.round(box.right + window.pageXOffset),
+		bottom: Math.round(box.bottom + window.pageYOffset),
+		left: Math.round(box.left + window.pageXOffset),
+	};
+}
+
+{
+	const header = document.querySelector('.header');
+	const headerSticky = document.querySelector('.header-sticky');
+	const headerMiddle = header.querySelector('.header__middle');
+	const headerMiddleCoords = getCoords(headerMiddle);
+	const buttonScrollUp = document.querySelector('.page__scroll-up');
+
+	buttonScrollUp.addEventListener('click', () => {
+		window.scrollTo({
+			top: 0,
+			behavior: 'smooth',
+		});
+	});
+
+	const switchHeaderSticky = () => {
+		if (window.pageYOffset > headerMiddleCoords.top) {
+			headerSticky.classList.add('header-sticky--show');
+		} else {
+			headerSticky.classList.remove('header-sticky--show');
+		}
+	};
+
+	const switchButtonScrollUp = () => {
+		if (window.pageYOffset > document.documentElement.clientHeight) {
+			buttonScrollUp.classList.add('page__scroll-up--show');
+		} else {
+			buttonScrollUp.classList.remove('page__scroll-up--show');
+		}
+	};
+
+	const windowScrollHandler = throttle(() => {
+		switchHeaderSticky();
+		switchButtonScrollUp();
+	}, 100);
+
+	window.addEventListener('scroll', windowScrollHandler, { passive: true });
+}
+
 {
 	const bannersSlider = new Swiper('.banners-slider .swiper', {
 		init: false,
@@ -33,15 +117,15 @@
 }
 
 {
-	const productsSliderOne = new Swiper('.products-slider-one .swiper', {
+	const productsSliderOne = new Swiper('.popular-products-slider .swiper', {
 		loop: true,
-		autoplay: {
-			delay: 5000,
-		},
+		// autoplay: {
+		// 	delay: 5000,
+		// },
 		clickable: true,
 
 		pagination: {
-			el: '.products-slider-one .swiper-pagination',
+			el: '.popular-products-slider .swiper-pagination',
 			bulletElement: 'button',
 			clickable: true,
 			bulletClass: 'swiper-pagination__bullet',
@@ -51,14 +135,37 @@
 		breakpoints: {
 			640: {
 				navigation: {
-					nextEl: '.products-slider-one .swiper-navigation--next',
-					prevEl: '.products-slider-one .swiper-navigation--prev',
+					nextEl: '.popular-products-slider .swiper-navigation--next',
+					prevEl: '.popular-products-slider .swiper-navigation--prev',
 				},
 			},
 		},
 	});
 
 	productsSliderOne.init();
+}
+
+{
+	const advantagesSlider = new Swiper('.advantages-slider .swiper', {
+		init: false,
+		slidesPerView: 'auto',
+		spaceBetween: 5,
+
+		autoplay: {
+			delay: 5000,
+		},
+
+		breakpoints: {
+			640: {
+				navigation: {
+					nextEl: '.advantages-slider .swiper-navigation--next',
+					prevEl: '.advantages-slider .swiper-navigation--prev',
+				},
+			},
+		},
+	});
+
+	advantagesSlider.init();
 }
 
 {
@@ -182,6 +289,7 @@
 }
 
 {
+	// eslint-disable-next-line no-unused-vars
 	const news = new Swiper('.news-slider .swiper', {
 		// init: false,
 		slidesPerView: 'auto',

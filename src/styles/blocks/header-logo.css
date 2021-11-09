@@ -12,4 +12,5 @@
 .header-logo__description {
 	font-weight: 600;
 	font-size: 10px;
+	white-space: nowrap;
 }

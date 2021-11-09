@@ -1,17 +1,15 @@
-.catalogs-slider {
+.advantages-slider {
 	position: relative;
 
 	display: grid;
 	grid-template-columns: 1fr;
 
-	padding: 25px 0;
+	margin-right: -10px;
+	margin-left: -10px;
+	padding: 5px 0;
 }
 
-.catalogs-slider__inner {
+.advantages-slider__inner {
 	display: grid;
 	grid-template-columns: 1fr;
-}
-
-.catalogs-slider .swiper {
-	height: 175px;
 }
