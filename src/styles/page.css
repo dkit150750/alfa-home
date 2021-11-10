@@ -8,6 +8,10 @@
 	background-color: var(--color-white);
 }
 
+.page__body--lock {
+	overflow: hidden;
+}
+
 .page__scroll-up {
 	position: fixed;
 	bottom: 10vh;

@@ -31,6 +31,7 @@
 @import './styles/blocks/header-search.css';
 @import './styles/blocks/header-tab.css';
 @import './styles/blocks/header-menu.css';
+@import './styles/blocks/header-mobile.css';
 @import './styles/blocks/header-mobile-top.css';
 @import './styles/blocks/header-mobile-bottom.css';
 

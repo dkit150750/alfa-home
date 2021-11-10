@@ -1,4 +1,6 @@
 .header-mobile-top__outher {
+	position: relative;
+
 	background-color: var(--color-white);
 }
 

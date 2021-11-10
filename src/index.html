@@ -14,62 +14,6 @@
 
 <body class="page__body">
 	<header class="header">
-		<!-- <div class="header-sticky">
-			<div class="header-sticky__container _container">
-				<a class="header-logo" href="/">
-					<img class="header-logo__image" src="./images/logo.jpg" width="889" height="153" alt="">
-					<span class="header-logo__description">климатическое оборудование в Москве</span>
-				</a>
-
-				<button class="button header__catalog-button" type="button" aria-label="меню">
-					<svg class="button__icon" width="16" height="16" aria-hidden="true">
-						<use xlink:href="./images/sprite.svg#burger"></use>
-					</svg>
-				</button>
-
-				<div class="header__search">
-					<form class="header-search">
-						<input class="header-search__input" aria-label="поиск" type="search"
-							placeholder="Введите название товара или артикул">
-						<button class="header-search__button-submit" type="submit" aria-label="найти">
-							<svg class="header-search__button-submit-icon" width="16" height="16" aria-hidden="true">
-								<use xlink:href="./images/sprite.svg#search"></use>
-							</svg>
-						</button>
-					</form>
-				</div>
-
-				<a class="header__phone" href="tel:+74956400545">+7 (495) 640-05-45</a>
-
-				<div class="header__tabs">
-					<button class="header-tab" type="button">
-						<svg class="header-tab__icon" width="16" height="16" aria-hidden="true">
-							<use xlink:href="./images/sprite.svg#user2"></use>
-						</svg>
-						<span class="header-tab__description">Войти</span>
-					</button>
-					<button class="header-tab" type="button">
-						<svg class="header-tab__icon" width="16" height="16" aria-hidden="true">
-							<use xlink:href="./images/sprite.svg#comparison"></use>
-						</svg>
-						<span class="header-tab__description">Сравнение</span>
-					</button>
-					<button class="header-tab" type="button">
-						<svg class="header-tab__icon" width="16" height="16" aria-hidden="true">
-							<use xlink:href="./images/sprite.svg#love"></use>
-						</svg>
-						<span class="header-tab__description">Избранное</span>
-					</button>
-					<button class="header-tab" type="button">
-						<svg class="header-tab__icon" width="16" height="16" aria-hidden="true">
-							<use xlink:href="./images/sprite.svg#cart"></use>
-						</svg>
-						<span class="header-tab__description">Корзина</span>
-					</button>
-				</div>
-			</div>
-		</div> -->
-
 		<div class="header-desktop">
 			<div class="header-desktop-top">
 				<div class="header-desktop-top__container _container">
@@ -132,15 +76,24 @@
 						</button>
 
 						<div class="header-desktop-middle__search">
-							<form class="header-search">
-								<input class="header-search__input" aria-label="поиск" type="search"
-									placeholder="Введите название товара или артикул">
-								<button class="header-search__button-submit" type="submit" aria-label="найти">
-									<svg class="header-search__button-submit-icon" width="16" height="16" aria-hidden="true">
+							<div class="header-search">
+								<button class="header-search__trigger" type="button" aria-label="открыть поиск">
+									<svg class="header-mobile-top__button-icon" width="16" height="16" aria-hidden="true">
 										<use xlink:href="./images/sprite.svg#search"></use>
 									</svg>
 								</button>
-							</form>
+								<div class="header-search__overlay"></div>
+								<div class="header-search__form-wrapper">
+									<form class="header-search__form">
+										<input class="header-search__input" aria-label="поиск" type="search">
+										<button class="header-search__submit" type="submit" aria-label="найти">
+											<svg class="header-search__submit-icon" width="16" height="16" aria-hidden="true">
+												<use xlink:href="./images/sprite.svg#search"></use>
+											</svg>
+										</button>
+									</form>
+								</div>
+							</div>
 						</div>
 
 
@@ -232,8 +185,7 @@
 			<div class="header-mobile-top">
 				<div class="header-mobile-top__outher">
 					<div class="header-mobile-top__container _container">
-						<button class="header-mobile-top__catalog-button button button--catalog"
-							type="button" aria-label="меню">
+						<button class="header-mobile-top__catalog-button button button--catalog" type="button" aria-label="меню">
 							<svg class="button__icon" width="16" height="16" aria-hidden="true">
 								<use xlink:href="./images/sprite.svg#burger"></use>
 							</svg>
@@ -258,12 +210,26 @@
 									<use xlink:href="./images/sprite.svg#phone"></use>
 								</svg>
 							</a>
-							<button class="header-mobile-top__button header-mobile-top__button--red" type="button"
-								aria-label="открыть поиск">
-								<svg class="header-mobile-top__button-icon" width="16" height="16" aria-hidden="true">
-									<use xlink:href="./images/sprite.svg#search"></use>
-								</svg>
-							</button>
+							<div class="header-search">
+								<button class="header-search__trigger" type="button" aria-label="открыть поиск">
+									<svg class="header-mobile-top__button-icon" width="16" height="16" aria-hidden="true">
+										<use xlink:href="./images/sprite.svg#search"></use>
+									</svg>
+								</button>
+								<div class="header-search__overlay"></div>
+								<div class="header-search__form-wrapper">
+									<form class="header-search__form">
+										<input class="header-search__input" aria-label="поиск" type="search">
+										<button class="header-search__reset" type="reset">
+											<svg class="header-search__reset-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+												fill="currentColor" viewBox="0 0 16 16">
+												<path
+													d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
+											</svg>
+										</button>
+									</form>
+								</div>
+							</div>
 
 							<div class="header-mobile-top__tabs">
 								<div class="header-tabs header-tabs--mobile-top">

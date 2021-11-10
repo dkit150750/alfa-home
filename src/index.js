@@ -49,6 +49,33 @@ function getCoords(element) {
 
 {
 	const header = document.querySelector('.header');
+	const headerMobileTop = header.querySelector('.header-mobile-top__outher');
+	const body = document.querySelector('.page__body');
+	const headerSearch = headerMobileTop.querySelector('.header-search');
+	const headerSearchForm = headerMobileTop.querySelector('.header-search__form');
+	const headerSearchFormInput = headerMobileTop.querySelector('.header-search__input');
+	const headerSearchFormOverlay = headerMobileTop.querySelector('.header-search__overlay');
+	const headerSearchTrigger = headerSearch.querySelector('.header-search__trigger');
+
+	function switchSearchExpanded() {
+		if (!headerSearch.classList.contains('header-search--expanded')) {
+			headerSearch.classList.add('header-search--expanded');
+			body.classList.add('page__body--lock');
+			headerSearchFormInput.focus();
+		} else {
+			headerSearch.classList.remove('header-search--expanded');
+			body.classList.remove('page__body--lock');
+			headerSearchTrigger.focus();
+		}
+	}
+
+	headerSearchForm.addEventListener('reset', switchSearchExpanded);
+	headerSearchTrigger.addEventListener('click', switchSearchExpanded);
+	headerSearchFormOverlay.addEventListener('click', switchSearchExpanded);
+}
+
+{
+	const header = document.querySelector('.header');
 
 	const headerDesktopMiddleWrapper = header.querySelector('.header-desktop-middle');
 	const headerDesktopMiddle = header.querySelector('.header-desktop-middle__outher');

@@ -1,31 +1,107 @@
-.header-search {
+.header-search__trigger {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	width: 30px;
+	height: 30px;
+
+	color: var(--color-red-500);
+}
+
+@media (min-width: 800px) {
+	.header-search__trigger {
+		display: none;
+	}
+}
+
+.header-search__trigger-icon {
+	display: block;
+}
+
+.header-search__overlay {
+	display: none;
+}
+
+.header-search--expanded .header-search__overlay {
+	position: fixed;
+	top: 50px;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	z-index: 10;
+
+	display: block;
+
+	background-color: var(--color-black);
+
+	opacity: 0.3;
+}
+
+@media (max-width: 799px) {
+	.header-search__form-wrapper {
+		display: none;
+	}
+}
+
+@media (max-width: 799px) {
+	.header-search--expanded .header-search__form-wrapper {
+		position: absolute;
+		top: 100%;
+		left: 0;
+		right: 0;
+		z-index: 12;
+
+		display: block;
+
+		width: 100%;
+
+		background-color: var(--color-white);
+	}
+}
+
+.header-search__form {
 	position: relative;
+
+	display: grid;
+	grid-template-columns: 1fr min-content;
+
+	height: 42px;
+}
+
+@media (min-width: 800px) {
+	.header-search__form {
+		height: 48px;
+	}
 }
 
 .header-search__input {
 	display: block;
 
 	width: 100%;
-	height: 48px;
-	padding: 10px 22px;
-	padding-right: calc(1px + 55px);
+	height: 100%;
+	padding: 5px 22px;
+	padding-right: calc(5px + 42px);
 
 	font-weight: 400;
 	font-size: 13px;
 	line-height: 1;
 
-	border: 0;
-	border-radius: 5px;
-
-	box-shadow: 0 0 0 1px var(--color-gray-200);
+	border: 1px solid var(--color-gray-200);
 
 	appearance: none;
 }
 
-.header-search--compact .header-search__input {
+@media (min-width: 400px) {
+	.header-search__input {
+		padding-right: calc(1px + 55px);
+
+		border-radius: 5px;
+	}
+}
+
+.header-search--compact .header-search__form {
 	height: 35px;
-	padding-top: 5px;
-	padding-bottom: 5px;
 }
 
 .header-search__input::-webkit-search-decoration,
@@ -39,7 +115,7 @@
 	font-weight: 300;
 }
 
-.header-search__button-submit {
+.header-search__submit {
 	position: absolute;
 	top: 0;
 	right: 0;
@@ -57,11 +133,31 @@
 	background-color: transparent;
 }
 
-.header-search__button-submit-icon {
+.header-search__submit-icon {
 	display: block;
 
 	width: 50%;
 	height: 50%;
 
 	color: var(--color-red-500);
+}
+
+.header-search__reset {
+	position: absolute;
+	top: 0;
+	right: 0;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	width: 42px;
+	height: 42px;
+}
+
+.header-search__reset-icon {
+	display: block;
+
+	width: 42px;
+	height: 42px;
 }
