@@ -49,24 +49,37 @@ function getCoords(element) {
 
 {
 	const header = document.querySelector('.header');
-	const headerDesctopeTop = header.querySelector('.header-desktop-top');
-	const headerDesktopMiddle = header.querySelector('.header-desktop-middle');
+
+	const headerDesktopMiddleWrapper = header.querySelector('.header-desktop-middle');
+	const headerDesktopMiddle = header.querySelector('.header-desktop-middle__outher');
+
+	const headerMobileTopWrapper = header.querySelector('.header-mobile-top');
+	const headerMobileTop = header.querySelector('.header-mobile-top__outher');
+
 	const headerLogoDesktope = headerDesktopMiddle.querySelector('.header-logo--desktope');
 	const headerSearchDesctope = headerDesktopMiddle.querySelector('.header-search');
 	const headerTabsBox = headerDesktopMiddle.querySelector('.header-tabs');
 	const headerTabDesktopeList = headerTabsBox.querySelectorAll('.header-tab');
 	const buttonScrollUp = document.querySelector('.page__scroll-up');
 
-	let headerMiddleHeight;
-	let headerTopCoords;
+	const windowHeight = window.innerHeight;
 
-	function getHeaderValues() {
-		headerMiddleHeight = headerDesktopMiddle.clientHeight;
-		headerTopCoords = getCoords(headerDesctopeTop);
-		console.log('get Val');
-		switchDesctopHeaderSticky();
+	let headerDesktopMiddleWrapperHeight;
+	let headerDesktopMiddleWrapperCoords;
+
+	function getHeaderDesktopValues() {
+		headerDesktopMiddleWrapperHeight = headerDesktopMiddleWrapper.clientHeight;
+		headerDesktopMiddleWrapperCoords = getCoords(headerDesktopMiddleWrapper);
+		switchHeaderDesktopSticky();
 	}
-	getHeaderValues();
+	getHeaderDesktopValues();
+
+	function getHeaderMobileValues() {
+		headerMobileTopWrapperHeight = headerMobileTopWrapper.clientHeight;
+		headerMobileTopCoords = getCoords(headerMobileTop);
+		switchHeaderDesktopSticky();
+	}
+	getHeaderMobileValues();
 
 	buttonScrollUp.addEventListener('click', () => {
 		window.scrollTo({
@@ -75,25 +88,42 @@ function getCoords(element) {
 		});
 	});
 
-	function switchDesctopHeaderSticky() {
-		if (window.pageYOffset > headerTopCoords.bottom) {
-			headerDesktopMiddle.classList.add('header-desktop-middle--fixed');
+	function switchHeaderDesktopSticky() {
+		if (window.pageYOffset > headerDesktopMiddleWrapperCoords.top) {
+			headerDesktopMiddle.classList.add('header-desktop-middle__outher--sticky');
 			headerLogoDesktope.classList.add('header-logo--hide-description');
 			headerSearchDesctope.classList.add('header-search--compact');
 			// headerTabsBox.classList.add('header-tabs--compact');
 			headerTabDesktopeList.forEach((tab) => {
 				tab.classList.add('header-tab--hide-description');
 			});
-			headerDesctopeTop.style.marginBottom = `${headerMiddleHeight}px`;
+			headerDesktopMiddleWrapper.style.paddingBottom = `${headerDesktopMiddleWrapperHeight}px`;
 		} else {
-			headerDesktopMiddle.classList.remove('header-desktop-middle--fixed');
+			headerDesktopMiddle.classList.remove('header-desktop-middle__outher--sticky');
 			headerLogoDesktope.classList.remove('header-logo--hide-description');
 			headerSearchDesctope.classList.remove('header-search--compact');
 			// headerTabsBox.classList.remove('header-tabs--compact');
 			headerTabDesktopeList.forEach((tab) => {
 				tab.classList.remove('header-tab--hide-description');
 			});
-			headerDesctopeTop.style.marginBottom = 0;
+			headerDesktopMiddleWrapper.style.paddingBottom = 0;
+		}
+	}
+
+	function hideMobileMenu() {
+		headerMobileTop.classList.remove('header-mobile-top__outher--hide');
+		headerMobileTop.classList.remove('header-mobile-top__outher--sticky');
+		headerMobileTopWrapper.style.paddingBottom = 0;
+		headerMobileTop.removeEventListener('animationend', hideMobileMenu);
+	}
+
+	function switchHeaderMobileSticky() {
+		if (window.pageYOffset > windowHeight / 1) {
+			headerMobileTop.classList.add('header-mobile-top__outher--sticky');
+			headerMobileTopWrapper.style.paddingBottom = `${headerMobileTopWrapperHeight}px`;
+		} else if (headerMobileTop.classList.contains('header-mobile-top__outher--sticky')) {
+			headerMobileTop.classList.add('header-mobile-top__outher--hide');
+			headerMobileTop.addEventListener('animationend', hideMobileMenu);
 		}
 	}
 
@@ -106,12 +136,13 @@ function getCoords(element) {
 	}
 
 	const windowScrollHandler = throttle(() => {
-		switchDesctopHeaderSticky();
+		switchHeaderDesktopSticky();
+		switchHeaderMobileSticky();
 		switchButtonScrollUp();
 	}, 10);
 
 	const windowResizeHandler = throttle(() => {
-		getHeaderValues();
+		getHeaderDesktopValues();
 	}, 100);
 
 	window.addEventListener('scroll', windowScrollHandler, { passive: true });

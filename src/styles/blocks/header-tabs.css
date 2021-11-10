@@ -1,14 +1,22 @@
 .header-tabs {
 	display: grid;
-	grid-template-columns: repeat(4, max-content);
-	gap: 10px;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 20px;
 }
 
 @media (min-width: 1280px) {
 	.header-tabs {
-		grid-template-columns: repeat(4, minmax(max-content));
 		gap: 30px;
 	}
+}
+
+.header-tabs--mobile-top {
+	gap: 0;
+}
+
+.header-tabs--mobile-bottom {
+	grid-template-columns: repeat(4, 1fr);
+	justify-content: space-between;
 }
 
 /* 
