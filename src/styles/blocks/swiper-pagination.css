@@ -1,11 +1,23 @@
 .swiper-pagination {
-	display: flex;
-	justify-content: center;
+	position: absolute;
+	left: 0;
+	bottom: 5px;
+	z-index: 10;
 
-	width: 100%;
+	display: flex;
+
+	width: 140px;
+
+	transform: translate3d(0, 0, 0);
+
+	overflow: hidden;
+
+	transition: 0.3s opacity;
 }
 
 .swiper-pagination__bullet {
+	position: relative;
+
 	display: flex;
 	justify-content: center;
 	align-items: center;

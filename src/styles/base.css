@@ -49,7 +49,7 @@
 	}
 }
 
-@media (min-width: 770px) {
+@media (min-width: 768px) {
 	:root {
 		--container-padding-x: 30px;
 	}
@@ -76,46 +76,22 @@
 	clip: rect(0, 0, 0, 0);
 }
 
-a {
-	text-decoration: none;
-}
-
-button {
-	margin: 0;
-	padding: 0;
-
-	border: 0;
-
-	background-color: transparent;
-
-	cursor: pointer;
-}
-
-button,
-textarea,
-input {
-	font-size: inherit;
-	font-family: inherit;
-}
-
-a,
-button,
-input {
-	color: inherit;
-
-	outline: none;
-}
-
-a:focus-visible,
-button:focus-visible,
-textarea:focus-visible,
-select:focus-visible,
-input:focus-visible {
-	box-shadow: 0 0 0 3px var(--color-blue-500);
-}
-
 ._container {
 	max-width: var(--container-max-width);
 	margin: 0 auto;
 	padding: 0 var(--container-padding-x);
+}
+
+.f-v {
+	outline: none !important;
+}
+
+.f-v:focus {
+	outline: none !important;
+}
+
+.f-v:focus-visible {
+	outline: none !important;
+
+	box-shadow: 0 0 0 3px var(--color-blue-500);
 }

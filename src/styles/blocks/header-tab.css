@@ -7,6 +7,10 @@
 	min-width: 30px;
 	min-height: 30px;
 
+	color: inherit;
+	font-size: inherit;
+	font-family: inherit;
+
 	border: 0;
 
 	background-color: transparent;

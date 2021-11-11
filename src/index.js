@@ -49,7 +49,7 @@ function getCoords(element) {
 
 {
 	const header = document.querySelector('.header');
-	const headerMobileTop = header.querySelector('.header-mobile-top__outher');
+	const headerMobileTop = header.querySelector('.header-mobile-top__outer');
 	const body = document.querySelector('.page__body');
 	const headerSearch = headerMobileTop.querySelector('.header-search');
 	const headerSearchForm = headerMobileTop.querySelector('.header-search__form');
@@ -78,15 +78,15 @@ function getCoords(element) {
 	const header = document.querySelector('.header');
 
 	const headerDesktopMiddleWrapper = header.querySelector('.header-desktop-middle');
-	const headerDesktopMiddle = header.querySelector('.header-desktop-middle__outher');
+	const headerDesktopMiddle = header.querySelector('.header-desktop-middle__outer');
 
 	const headerMobileTopWrapper = header.querySelector('.header-mobile-top');
-	const headerMobileTop = header.querySelector('.header-mobile-top__outher');
+	const headerMobileTop = header.querySelector('.header-mobile-top__outer');
 
-	const headerLogoDesktope = headerDesktopMiddle.querySelector('.header-logo--desktope');
-	const headerSearchDesctope = headerDesktopMiddle.querySelector('.header-search');
+	const headerLogoDesktop = headerDesktopMiddle.querySelector('.header-logo--desktop');
+	const headerSearchDesktop = headerDesktopMiddle.querySelector('.header-search');
 	const headerTabsBox = headerDesktopMiddle.querySelector('.header-tabs');
-	const headerTabDesktopeList = headerTabsBox.querySelectorAll('.header-tab');
+	const headerTabDesktopList = headerTabsBox.querySelectorAll('.header-tab');
 	const buttonScrollUp = document.querySelector('.page__scroll-up');
 
 	const windowHeight = window.innerHeight;
@@ -117,20 +117,20 @@ function getCoords(element) {
 
 	function switchHeaderDesktopSticky() {
 		if (window.pageYOffset > headerDesktopMiddleWrapperCoords.top) {
-			headerDesktopMiddle.classList.add('header-desktop-middle__outher--sticky');
-			headerLogoDesktope.classList.add('header-logo--hide-description');
-			headerSearchDesctope.classList.add('header-search--compact');
+			headerDesktopMiddle.classList.add('header-desktop-middle__outer--sticky');
+			headerLogoDesktop.classList.add('header-logo--hide-description');
+			headerSearchDesktop.classList.add('header-search--compact');
 			// headerTabsBox.classList.add('header-tabs--compact');
-			headerTabDesktopeList.forEach((tab) => {
+			headerTabDesktopList.forEach((tab) => {
 				tab.classList.add('header-tab--hide-description');
 			});
 			headerDesktopMiddleWrapper.style.paddingBottom = `${headerDesktopMiddleWrapperHeight}px`;
 		} else {
-			headerDesktopMiddle.classList.remove('header-desktop-middle__outher--sticky');
-			headerLogoDesktope.classList.remove('header-logo--hide-description');
-			headerSearchDesctope.classList.remove('header-search--compact');
+			headerDesktopMiddle.classList.remove('header-desktop-middle__outer--sticky');
+			headerLogoDesktop.classList.remove('header-logo--hide-description');
+			headerSearchDesktop.classList.remove('header-search--compact');
 			// headerTabsBox.classList.remove('header-tabs--compact');
-			headerTabDesktopeList.forEach((tab) => {
+			headerTabDesktopList.forEach((tab) => {
 				tab.classList.remove('header-tab--hide-description');
 			});
 			headerDesktopMiddleWrapper.style.paddingBottom = 0;
@@ -138,18 +138,18 @@ function getCoords(element) {
 	}
 
 	function hideMobileMenu() {
-		headerMobileTop.classList.remove('header-mobile-top__outher--hide');
-		headerMobileTop.classList.remove('header-mobile-top__outher--sticky');
+		headerMobileTop.classList.remove('header-mobile-top__outer--hide');
+		headerMobileTop.classList.remove('header-mobile-top__outer--sticky');
 		headerMobileTopWrapper.style.paddingBottom = 0;
 		headerMobileTop.removeEventListener('animationend', hideMobileMenu);
 	}
 
 	function switchHeaderMobileSticky() {
 		if (window.pageYOffset > windowHeight / 1) {
-			headerMobileTop.classList.add('header-mobile-top__outher--sticky');
+			headerMobileTop.classList.add('header-mobile-top__outer--sticky');
 			headerMobileTopWrapper.style.paddingBottom = `${headerMobileTopWrapperHeight}px`;
-		} else if (headerMobileTop.classList.contains('header-mobile-top__outher--sticky')) {
-			headerMobileTop.classList.add('header-mobile-top__outher--hide');
+		} else if (headerMobileTop.classList.contains('header-mobile-top__outer--sticky')) {
+			headerMobileTop.classList.add('header-mobile-top__outer--hide');
 			headerMobileTop.addEventListener('animationend', hideMobileMenu);
 		}
 	}
@@ -180,13 +180,11 @@ function getCoords(element) {
 	const bannersSlider = new Swiper('.banners-slider .swiper', {
 		init: false,
 		effect: 'fade',
-		loop: true,
-		autoplay: {
-			delay: 5000,
-		},
+
 		clickable: true,
 
 		pagination: {
+			dynamicBullets: true,
 			el: '.banners-slider .swiper-pagination',
 			bulletElement: 'button',
 			clickable: true,
@@ -195,7 +193,7 @@ function getCoords(element) {
 		},
 
 		breakpoints: {
-			770: {
+			768: {
 				navigation: {
 					nextEl: '.banners-slider .swiper-navigation--next',
 					prevEl: '.banners-slider .swiper-navigation--prev',
@@ -209,13 +207,14 @@ function getCoords(element) {
 
 {
 	const productsSliderOne = new Swiper('.popular-products-slider .swiper', {
-		loop: true,
+		// loop: true,
 		// autoplay: {
 		// 	delay: 5000,
 		// },
 		clickable: true,
 
 		pagination: {
+			dynamicBullets: true,
 			el: '.popular-products-slider .swiper-pagination',
 			bulletElement: 'button',
 			clickable: true,
@@ -224,7 +223,7 @@ function getCoords(element) {
 		},
 
 		breakpoints: {
-			770: {
+			768: {
 				navigation: {
 					nextEl: '.popular-products-slider .swiper-navigation--next',
 					prevEl: '.popular-products-slider .swiper-navigation--prev',
@@ -250,7 +249,7 @@ function getCoords(element) {
 			400: {
 				spaceBetween: 5,
 			},
-			770: {
+			768: {
 				navigation: {
 					nextEl: '.advantages-slider .swiper-navigation--next',
 					prevEl: '.advantages-slider .swiper-navigation--prev',
@@ -273,7 +272,7 @@ function getCoords(element) {
 		},
 
 		breakpoints: {
-			770: {
+			768: {
 				navigation: {
 					nextEl: '.catalogs-slider .swiper-navigation--next',
 					prevEl: '.catalogs-slider .swiper-navigation--prev',
@@ -299,7 +298,7 @@ function getCoords(element) {
 		},
 
 		breakpoints: {
-			770: {
+			768: {
 				navigation: {
 					nextEl: '.brands-slider .swiper-navigation--next',
 					prevEl: '.brands-slider .swiper-navigation--prev',
@@ -324,7 +323,7 @@ function getCoords(element) {
 		},
 
 		breakpoints: {
-			770: {
+			768: {
 				navigation: {
 					nextEl: '.works-slider .swiper-navigation--next',
 					prevEl: '.works-slider .swiper-navigation--prev',
@@ -348,7 +347,7 @@ function getCoords(element) {
 		},
 
 		breakpoints: {
-			770: {
+			768: {
 				navigation: {
 					nextEl: '.promotions-slider .swiper-navigation--next',
 					prevEl: '.promotions-slider .swiper-navigation--prev',
@@ -371,7 +370,7 @@ function getCoords(element) {
 		},
 
 		breakpoints: {
-			770: {
+			768: {
 				navigation: {
 					nextEl: '.certificates-slider .swiper-navigation--next',
 					prevEl: '.certificates-slider .swiper-navigation--prev',
@@ -395,7 +394,7 @@ function getCoords(element) {
 		},
 
 		breakpoints: {
-			770: {
+			768: {
 				navigation: {
 					nextEl: '.news-slider .swiper-navigation--next',
 					prevEl: '.news-slider .swiper-navigation--prev',
@@ -419,7 +418,7 @@ function getCoords(element) {
 		},
 
 		breakpoints: {
-			770: {
+			768: {
 				navigation: {
 					nextEl: '.info-slider .swiper-navigation--next',
 					prevEl: '.info-slider .swiper-navigation--prev',

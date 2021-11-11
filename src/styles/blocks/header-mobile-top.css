@@ -1,10 +1,10 @@
-.header-mobile-top__outher {
+.header-mobile-top__outer {
 	position: relative;
 
 	background-color: var(--color-white);
 }
 
-.header-mobile-top__outher--sticky {
+.header-mobile-top__outer--sticky {
 	position: fixed;
 	top: 0;
 	z-index: 1000;
@@ -19,7 +19,7 @@
 	animation-fill-mode: backwards;
 }
 
-.header-mobile-top__outher--hide {
+.header-mobile-top__outer--hide {
 	animation-name: header-hide;
 	animation-duration: 0.2s;
 	animation-timing-function: ease-in-out;
@@ -57,7 +57,7 @@
 	width: 122px;
 }
 
-.header-mobile-top__outher--sticky .header-mobile-top__logo {
+.header-mobile-top__outer--sticky .header-mobile-top__logo {
 	width: 85px;
 }
 
@@ -77,7 +77,7 @@
 	margin-left: auto;
 }
 
-.header-mobile-top__outher--sticky .header-mobile-top__buttons {
+.header-mobile-top__outer--sticky .header-mobile-top__buttons {
 	gap: 0;
 }
 
@@ -90,11 +90,11 @@
 	height: 30px;
 }
 
-.header-mobile-top__outher--sticky .header-mobile-top__button--map {
+.header-mobile-top__outer--sticky .header-mobile-top__button--map {
 	display: none;
 }
 
-.header-mobile-top__outher--sticky .header-mobile-top__button--phone {
+.header-mobile-top__outer--sticky .header-mobile-top__button--phone {
 	display: none;
 }
 
@@ -109,6 +109,6 @@
 	height: 25px;
 }
 
-.header-mobile-top__outher:not(.header-mobile-top__outher--sticky) .header-mobile-top__tabs {
+.header-mobile-top__outer:not(.header-mobile-top__outer--sticky) .header-mobile-top__tabs {
 	display: none;
 }

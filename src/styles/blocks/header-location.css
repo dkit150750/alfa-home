@@ -5,6 +5,12 @@
 	align-items: center;
 
 	width: 130px;
+
+	font-family: inherit;
+
+	border: 0;
+
+	background-color: transparent;
 }
 
 @media (min-width: 1150px) {
@@ -20,14 +26,14 @@
 	height: 20px;
 }
 
-.header-location__sity {
+.header-location__city {
 	font-weight: 500;
 	font-size: 10px;
 	line-height: 1;
 }
 
 @media (min-width: 1150px) {
-	.header-location__sity {
+	.header-location__city {
 		font-size: 13px;
 	}
 }

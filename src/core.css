@@ -3,17 +3,16 @@
 @import './styles/page.css';
 
 @import './styles/blocks/swiper.css';
-
 @import './styles/blocks/swiper-navigation.css';
-
 @import './styles/blocks/swiper-pagination.css';
 
-@import './styles/blocks/underlined-header.css';
-@import './styles/blocks/title-h2.css';
-
 @import './styles/blocks/button.css';
-
+@import './styles/blocks/title-h2.css';
+@import './styles/blocks/underlined-header.css';
 @import './styles/blocks/skew.css';
+
+@import './styles/blocks/header-location.css';
+@import './styles/blocks/header-logo.css';
 
 @import './styles/blocks/footer-secondary-menu.css';
 
@@ -22,12 +21,10 @@
 @import './styles/blocks/header-desktop-top.css';
 @import './styles/blocks/header-desktop-middle.css';
 @import './styles/blocks/header-tabs.css';
-@import './styles/blocks/header-sticky.css';
+@import './styles/blocks/header-desktop-bottom.css';
 
-@import './styles/blocks/header-location.css';
 @import './styles/blocks/secondary-menu.css';
 
-@import './styles/blocks/header-logo.css';
 @import './styles/blocks/header-search.css';
 @import './styles/blocks/header-tab.css';
 @import './styles/blocks/header-menu.css';

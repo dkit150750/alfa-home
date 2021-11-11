@@ -1,8 +1,8 @@
-.header-desktop-middle__outher {
+.header-desktop-middle__outer {
 	background-color: var(--color-white);
 }
 
-.header-desktop-middle__outher--sticky {
+.header-desktop-middle__outer--sticky {
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -22,34 +22,11 @@
 	padding: 10px var(--container-padding-x);
 }
 
-/* LOGO */
-
-/* .header-desktop-middle__logo {
-	text-decoration: none;
-} */
-
-/* .header-desktop-middle__logo-image {
-	display: block;
-
-	height: auto;
-	max-width: 198px;
-}
-
-.header-desktop-middle__logo-image-description {
-	font-weight: 600;
-	font-size: 10px;
-	white-space: nowrap;
-}
-
-.header-desktop-middle__outher--sticky .header-desktop-middle__logo-image-description {
-	display: none;
-} */
-
 .header-desktop-middle__catalog-button {
 	display: none;
 }
 
-.header-desktop-middle__outher--sticky .header-desktop-middle__catalog-button {
+.header-desktop-middle__outer--sticky .header-desktop-middle__catalog-button {
 	display: block;
 	flex-shrink: 0;
 }
@@ -65,7 +42,7 @@
 }
 
 @media (min-width: 1030px) {
-	.header-desktop-middle__outher--sticky .header-desktop-middle__phone {
+	.header-desktop-middle__outer--sticky .header-desktop-middle__phone {
 		display: block;
 
 		font-size: 14px;
