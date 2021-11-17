@@ -11,14 +11,11 @@
 @import './styles/blocks/banner-discount.css';
 @import './styles/blocks/banner-discount-2.css';
 
-@import './styles/blocks/brands-section.css';
 @import './styles/blocks/brands-slider.css';
 @import './styles/blocks/brand-card.css';
 
-@import './styles/blocks/products-tabbed.css';
-
 @import './styles/blocks/works-slider.css';
-@import './styles/blocks/about-section.css';
+@import './styles/blocks/home-about-section.css';
 
 @import './styles/blocks/news-slider.css';
 @import './styles/blocks/news-card.css';
@@ -27,19 +24,3 @@
 @import './styles/blocks/promotions-slider.css';
 @import './styles/blocks/promotion-card.css';
 @import './styles/blocks/certificates-slider.css';
-
-.page__banners-section {
-	margin-bottom: 20px;
-}
-
-.page__products-tabbed {
-	margin-bottom: 20px;
-}
-
-.page__banner-discount-2 {
-	margin-bottom: 20px;
-}
-
-.page__about-section {
-	margin-bottom: 30px;
-}

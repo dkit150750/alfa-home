@@ -1,11 +1,5 @@
 .certificates-slider {
 	position: relative;
-
-	padding: 40px 0;
-}
-
-.certificates-slider .swiper {
-	/* height: 205px; */
 }
 
 .certificates-slider__certificate {

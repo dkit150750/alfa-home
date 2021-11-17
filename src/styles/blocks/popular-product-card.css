@@ -52,7 +52,7 @@
 	text-align: center;
 }
 
-.popuplar-product-card__price-wrapper {
+.popular-product-card__price-wrapper {
 	display: flex;
 	justify-content: space-between;
 	align-items: baseline;
@@ -60,12 +60,12 @@
 	line-height: 1;
 }
 
-.popuplar-product-card__old-price {
+.popular-product-card__old-price {
 	font-weight: 400;
 	font-size: 16px;
 }
 
-.popuplar-product-card__discount {
+.popular-product-card__discount {
 	padding: 2px 3px;
 
 	color: var(--color-white);
@@ -76,7 +76,7 @@
 	background-color: var(--color-red-500);
 }
 
-.popuplar-product-card__price {
+.popular-product-card__price {
 	font-weight: 700;
 	font-size: 20px;
 }

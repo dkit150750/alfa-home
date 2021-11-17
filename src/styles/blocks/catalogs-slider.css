@@ -3,8 +3,6 @@
 
 	display: grid;
 	grid-template-columns: 1fr;
-
-	padding: 25px 0;
 }
 
 .catalogs-slider__inner {

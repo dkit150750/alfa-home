@@ -7,6 +7,10 @@
 	height: 30px;
 
 	color: var(--color-red-500);
+
+	border: 0;
+
+	background-color: transparent;
 }
 
 @media (min-width: 800px) {
@@ -17,6 +21,9 @@
 
 .header-search__trigger-icon {
 	display: block;
+
+	width: 25px;
+	height: 25px;
 }
 
 .header-search__overlay {
@@ -155,6 +162,10 @@
 
 	width: 42px;
 	height: 42px;
+
+	border: 0;
+
+	background-color: transparent;
 }
 
 .header-search__reset-icon {

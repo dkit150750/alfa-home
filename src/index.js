@@ -181,6 +181,11 @@ function getCoords(element) {
 		init: false,
 		effect: 'fade',
 
+		loop: true,
+		autoplay: {
+			delay: 5000,
+		},
+
 		clickable: true,
 
 		pagination: {
@@ -207,7 +212,7 @@ function getCoords(element) {
 
 {
 	const productsSliderOne = new Swiper('.popular-products-slider .swiper', {
-		// loop: true,
+		loop: true,
 		// autoplay: {
 		// 	delay: 5000,
 		// },
@@ -215,6 +220,7 @@ function getCoords(element) {
 
 		pagination: {
 			dynamicBullets: true,
+			dynamicMainBullets: 3,
 			el: '.popular-products-slider .swiper-pagination',
 			bulletElement: 'button',
 			clickable: true,
@@ -285,8 +291,8 @@ function getCoords(element) {
 }
 
 {
-	const brandsSlider = new Swiper('.brands-slider .swiper', {
-		init: false,
+	new Swiper('.brands-slider .swiper', {
+		// init: false,
 		slidesPerView: 'auto',
 		grid: {
 			rows: 2,
@@ -299,6 +305,9 @@ function getCoords(element) {
 
 		breakpoints: {
 			768: {
+				grid: {
+					rows: 2,
+				},
 				navigation: {
 					nextEl: '.brands-slider .swiper-navigation--next',
 					prevEl: '.brands-slider .swiper-navigation--prev',
@@ -307,7 +316,7 @@ function getCoords(element) {
 		},
 	});
 
-	brandsSlider.init();
+	// brandsSlider.init();
 }
 
 {
@@ -434,14 +443,14 @@ function getCoords(element) {
 	class Tabbed {
 		constructor(tabbed) {
 			this.tabbed = tabbed;
-			this.tablist = tabbed.querySelector('[data-type=tablist]');
+			this.tabList = tabbed.querySelector('[data-type=tab-list]');
 			this.tabs = [...tabbed.querySelectorAll('[data-type=tab]')];
-			this.panels = [...tabbed.querySelectorAll('[data-type=tabpanel]')];
+			this.panels = [...tabbed.querySelectorAll('[data-type=tab-panel]')];
 		}
 
 		initTabbed = () => {
 			this.initTabs();
-			this.initTablist();
+			this.inittabList();
 			this.initPanels();
 		};
 
@@ -461,13 +470,13 @@ function getCoords(element) {
 			this.tabs[0].setAttribute('aria-selected', 'true');
 		};
 
-		initTablist = () => {
-			this.tablist.setAttribute('role', 'tablist');
+		inittabList = () => {
+			this.tabList.setAttribute('role', 'tab-list');
 		};
 
 		initPanels = () => {
 			this.panels.forEach((panel, panelIndex) => {
-				panel.setAttribute('role', 'tabpanel');
+				panel.setAttribute('role', 'tab-panel');
 				panel.setAttribute('tabindex', '-1');
 				panel.setAttribute('aria-labelledby', this.tabs[panelIndex].id);
 				panel.hidden = true;
@@ -478,7 +487,7 @@ function getCoords(element) {
 		tabAddClickHandler = (tab) => {
 			tab.addEventListener('click', (event) => {
 				event.preventDefault();
-				const currentTab = this.tablist.querySelector('[aria-selected]');
+				const currentTab = this.tabList.querySelector('[aria-selected]');
 				if (event.currentTarget !== currentTab) {
 					this.switchTab(currentTab, event.currentTarget);
 				}

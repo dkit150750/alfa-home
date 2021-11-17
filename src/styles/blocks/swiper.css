@@ -37,7 +37,6 @@
 .swiper-slide {
 	position: relative;
 
-	/* display: flex; */
 	flex-shrink: 0;
 
 	width: 100%;
@@ -63,24 +62,4 @@
 .swiper-fade .swiper-slide-active,
 .swiper-fade .swiper-slide-active .swiper-slide-active {
 	pointer-events: auto;
-}
-
-.swiper-navigation {
-	position: absolute;
-	top: 50%;
-	z-index: 10;
-
-	transform: translateY(-50%);
-}
-
-.swiper-navigation--prev {
-	left: 0;
-
-	transform: translateY(-50%) translateX(-50%);
-}
-
-.swiper-navigation--next {
-	right: 0;
-
-	transform: translateY(-50%) translateX(50%);
 }

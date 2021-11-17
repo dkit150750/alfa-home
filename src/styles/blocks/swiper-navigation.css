@@ -1,5 +1,11 @@
 .swiper-navigation {
+	position: absolute;
+	top: 50%;
+	z-index: 10;
+
 	display: none;
+
+	transform: translateY(-50%);
 }
 
 @media (min-width: 768px) {
@@ -34,6 +40,18 @@
 .swiper-navigation:focus-visible,
 .swiper-navigation:hover {
 	color: var(--color-red-600);
+}
+
+.swiper-navigation--prev {
+	left: 0;
+
+	transform: translateY(-50%) translateX(-50%);
+}
+
+.swiper-navigation--next {
+	right: 0;
+
+	transform: translateY(-50%) translateX(50%);
 }
 
 .swiper-navigation__icon {

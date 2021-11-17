@@ -1,4 +1,6 @@
 .promotion-card {
+	position: relative;
+
 	display: block;
 
 	width: 355px;
@@ -38,6 +40,29 @@
 
 	font-weight: 600;
 	font-size: 16px;
+}
+
+.promotion-card__link {
+	display: block;
+
+	max-height: 1em;
+
+	color: inherit;
+	white-space: nowrap;
+	text-decoration: none;
+	text-overflow: ellipsis;
+
+	overflow: hidden;
+}
+
+.promotion-card__link::before {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	content: '';
+	z-index: 2;
 }
 
 .promotion-card__description {

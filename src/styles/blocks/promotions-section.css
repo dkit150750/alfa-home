@@ -1,8 +1,7 @@
 .promotions-section__sliders {
 	display: flex;
 	flex-direction: column;
-
-	/* display: grid; */
+	gap: 40px;
 }
 
 @media (min-width: 1350px) {

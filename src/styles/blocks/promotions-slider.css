@@ -3,16 +3,9 @@
 
 	display: grid;
 	grid-template-columns: 1fr;
-
-	padding: 40px 0;
 }
 
 .promotions-slider__inner {
 	display: grid;
 	grid-template-columns: 1fr;
 }
-
-/* 
-.promotions-slider .swiper-navigation {
-	top: 143px;
-} */
